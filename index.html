@@ -12,6 +12,7 @@
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" href="css/shards.min.css?version=2.0.1">
         <link rel="stylesheet" href="css/shards-extras.min.css?version=2.0.1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
     </head>
 
     <style>
@@ -78,9 +79,10 @@
         <div class="inner-wrapper mt-auto mb-auto container">
           <div class="row">
             <div class="col-lg-5 col-md-5 col-sm-12 mt-auto mb-auto mr-3">
-                <h1 class="welcome-heading display-4 text-white" >Say <span style="font-weight:600;"> goodbye </span> to timesheets</h1>
+                <h1 class="welcome-heading display-4 text-white" >Say <span style="font-weight:600;"> goodbye </span> </h1>
+                <h1 class="welcome-heading display-4 text-white tl1"> timesheets</h1>
                 <!-- <p class="text-muted">Keep your files in sync using the most secure and advanced solution to date.</p> -->
-                <p class="text-muted">Bundy takes care of timesheeting, hour tracking and scheduling automatically and out of your sight so you can focus on the important things.</p>
+                <p class="text-muted header-test">Bundy takes care of timesheeting, hour tracking and scheduling automatically and out of your sight so you can focus on the important things.</p>
                 <a href="https://designrevision.com/download/shards" class="btn btn-lg btn-block btn-outline-success btn-pill align-self-center"><i class="fa fa-check mr-2"></i>Get started in 5 minutes</a>
 
                 <div class="d-block mt-4">
@@ -145,7 +147,7 @@
                   <div class="icon text-white bg-success mr-5"><i class="fa fa-globe"></i></div>
                   <div>
                       <h5>Access Anywhere, Anytime</h5>
-                      <p>View realtime information about your business from your device anywhere in the world.</p>
+                      <p>View real information about your business from your device anywhere in the world.</p>
                   </div>
                 </div>
               </div>
@@ -350,5 +352,18 @@
       <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+      <!-- Hubspot Analytics -->
+      <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4620392.js"></script>
+
+      <script>
+        $(function () {
+          $('.tl1').textillate({ in: { effect: 'fadeIn' }});
+          $('.tl1').textillate({ out: {effect: 'fadeOut',delayScale: 1.5}});
+        })
+
+
+      </script>
     </body>
 </html>
