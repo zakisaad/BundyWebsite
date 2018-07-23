@@ -13,10 +13,20 @@
         <link rel="stylesheet" href="css/shards.min.css?version=2.0.1">
         <link rel="stylesheet" href="css/shards-extras.min.css?version=2.0.1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+        <link href="https://fonts.googleapis.com/css?family=Tajawal:200,300,400,500,700,800,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700,900" rel="stylesheet">
     </head>
 
     <style>
-    
+      p { 
+        font-family: 'Tajawal', sans-serif ;
+      }
+
+      h1,h2,h3,h4 {
+        font-family: 'Tajawal', sans-serif ;
+        font-weight: 700;
+      }
+            
     .card{
       transition: all 0.3s ease-in-out;
       
@@ -25,8 +35,13 @@
       transform: scale(1.02, 1.02);
     }
 
-
+    .btn.btn-pill{
+      border-radius: 5px;
+    }
     </style>
+
+
+
     <body class="shards-app-promo-page--1">
       <!-- Welcome Section -->
       <div class="welcome d-flex justify-content-center flex-column">
@@ -34,7 +49,7 @@
           <!-- Navigation -->
           <nav class="navbar navbar-expand-lg navbar-dark pt-4 px-0">
             <a class="navbar-brand mr-5" href="#">
-              <img src="images/common/bundy-logo.png" class="img-fluid mx-auto d-block mb-2" alt="Bundy Logo" width="100px">
+              <img src="images/common/bundy-logo.png" class="img-fluid mx-auto d-block mb-0" alt="Bundy Logo" width="45px">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -78,21 +93,27 @@
         <!-- Inner Wrapper -->
         <div class="inner-wrapper mt-auto mb-auto container">
           <div class="row">
-            <div class="col-lg-5 col-md-5 col-sm-12 mt-auto mb-auto mr-3">
-                <h1 class="welcome-heading display-4 text-white" >Say <span style="font-weight:600;"> goodbye </span> </h1>
-                <h1 class="welcome-heading display-4 text-white tl1"> timesheets</h1>
-                <!-- <p class="text-muted">Keep your files in sync using the most secure and advanced solution to date.</p> -->
-                <p class="text-muted header-test">Bundy takes care of timesheeting, hour tracking and scheduling automatically and out of your sight so you can focus on the important things.</p>
-                <a href="https://designrevision.com/download/shards" class="btn btn-lg btn-block btn-outline-success btn-pill align-self-center"><i class="fa fa-check mr-2"></i>Get started in 5 minutes</a>
 
-                <div class="d-block mt-4">
+            <div class="col-lg-5 col-md-5 col-sm-12 mt-auto mb-auto mr-0">
+                <h1 class="welcome-heading display-4 text-white" >One app to run your  <span style="font-weight:600; color:#8DB23A;"> business  </span></h1>
+                <!-- <p class="text-muted">Keep your files in sync using the most secure and advanced solution to date.</p> -->
+                <p class=" header-test text-white mt-4" style="font-size:1.2em;"> <span style="font-weight:600; color:#8DB23A;"> Bundy </span> takes care of timesheeting, hour tracking and scheduling automatically and out of your sight so you can focus on the important things.</p>
+
+                <div class="mt-auto">
+                    <a href="https://designrevision.com/download/shards" class="btn btn-lg btn-block btn-outline-white btn-pill align-self-center"> <i class="fa fa-run mr-2"></i> Get started  <span style="font-weight:600; color:#8DB23A;"> in 5 minutes </span> </a>
+                </div>
+
+                <div class="d-block mb-4 mt-2">
                   <a href="https://designrevision.com/download/shards"><img class="w-25 mt-2 mr-3" src="images/app-promo/badge-apple-store.png" alt="Get it on Apple Store"></a>
                   <a href="https://designrevision.com/download/shards"><img class="w-25 mt-2" src="images/app-promo/badge-google-play-store.png" alt="Get it on Google Play Store"></a>
                 </div>
+
+
             </div>
 
+
             <div class="col-lg-4 col-md-5 col-sm-12 ml-auto">
-              <img class="iphone-mockup ml-auto" src="images/app-promo/bundy-app-main.svg" alt="iPhone App Mockup - Shards App Promo Demo">
+              <img class="iphone-mockup ml-auto" src="images/app-promo/bundy-app-main.png" alt="iPhone App Mockup - Shards App Promo Demo" style="border-radius:5px;">
             </div>
           </div>
         </div>
@@ -355,15 +376,6 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
       <!-- Hubspot Analytics -->
-      <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4620392.js"></script>
-
-      <script>
-        $(function () {
-          $('.tl1').textillate({ in: { effect: 'fadeIn' }});
-          $('.tl1').textillate({ out: {effect: 'fadeOut',delayScale: 1.5}});
-        })
-
-
-      </script>
+      <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4620392.js"></script>      
     </body>
 </html>
