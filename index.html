@@ -85,6 +85,14 @@
     box-shadow: none;
 }
 
+
+.btn-success.disabled, .btn-success:disabled {
+    background-color: #8DB23A;
+    border-color: #8DB23A;
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
 .btn-success:hover {
     color: #fff;
     background-color: #8DB23A;
@@ -92,10 +100,25 @@
     box-shadow: 0 5px 15px rgba(0,0,0,.05), 0 4px 10px rgba(142, 178, 58, 0.247);
 }
 
+.btn-outline-success:not(:disabled):not(.disabled).active, .btn-outline-success:not(:disabled):not(.disabled):active, .show>.btn-outline-success.dropdown-toggle {
+    color: #fff;
+    background-color: #8DB23A;
+    border-color: #8DB23A;
+}
+
+
+
+.btn-outline-success.focus, .btn-outline-success:focus {
+    box-shadow: 0 0 0 3px rgba(141,178,58,.05),0 3px 15px rgba(141,178,58,.2),0 2px 5px rgba(0,0,0,.247)!important;
+}
+
 .text-bundy-green { 
   font-weight:600; 
   color:#8DB23A;
 }
+
+
+
 
 
 </style>
@@ -553,13 +576,7 @@
   </footer>
   <!-- / Footer Section -->
 
-
-  <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#heroSignupModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
+  <!-- Modal -->
 <div class="modal fade" id="heroSignupModal" tabindex="-1" role="dialog" aria-labelledby="heroSignupModal" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -570,11 +587,13 @@
         </button>
       </div>
       <div class="modal-body">
-        <p> Joining our beta program rewards you with <br> <span class="text-bundy-green"> 6 months of premium access, on us!</span><br><br>
-           We just need a few of your details to get started: </p>
             <form>
               <div class="row">
                 <div class="col-sm-12">
+                    <p style="line-height: 5px;"> Joining our beta program rewards you with  </p>
+                    <h4 class="text-bundy-green" style="line-height: 15px;"> 6 Months Premium Access </h4>
+                     <p style="line-height: 15px;"> We just need a few of your details to get started: </p>
+           
                   <div class="form-group">
                     <label for="contactFormFullName">Full Name</label>
                     <input type="email" class="form-control" id="contactFormFullName" placeholder="Enter your full name">
@@ -590,15 +609,15 @@
                   <div class="form-group">
                     <label for="contactFormEmail">Email address</label>
                     <input type="email" class="form-control" id="contactFormEmail" placeholder="Enter your email address">
+                    <div class="custom-control custom-checkbox my-3 ">
+                      <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
+                      <label class="custom-control-label" for="customCheck1">I consent</label>
+                    </div>
+      
                   </div>
                 </div>
-                <div class="custom-control custom-checkbox mb-3">
-                  <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
-                  <label class="custom-control-label" for="customCheck1">I consent</label>
-                </div>
-
               </div>
-              <input class="btn btn-success btn-pill d-flex ml-auto mr-auto btn-block" type="submit" value="Apply for early access">
+              <input class="btn btn-success disabled btn-pill d-flex ml-auto mr-auto btn-block" type="submit" value="Apply for early access">
             </form>
       </div>
       <div class="modal-footer">
