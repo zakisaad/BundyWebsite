@@ -72,6 +72,8 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, .05), 0 4px 10px rgba(142, 178, 58, 0.247);
   }
 
+
+
   .text-success {
     color: #8DB23A !important;
 
@@ -108,11 +110,23 @@
   }
 
 
+.btn-success:not(:disabled):not(.disabled).active, .btn-success:not(:disabled):not(.disabled):active, .show>.btn-success.dropdown-toggle {
+    color: #fff;
+    background-color: #8DB23A;
+    border-color: #8DB23A;
+    background-image: none;
+    box-shadow: inset 0 3px 5px rgba(0,0,0,.125)!important;
+}
 
   .btn-outline-success.focus,
   .btn-outline-success:focus {
     box-shadow: 0 0 0 3px rgba(141, 178, 58, .05), 0 3px 15px rgba(141, 178, 58, .2), 0 2px 5px rgba(0, 0, 0, .247) !important;
   }
+
+  .btn-success.focus, .btn-success:focus {
+    box-shadow: 0 0 0 3px rgba(142, 178, 58, 0.2), 0 3px 15px rgba(142, 178, 58, 0.1), 0 2px 5px rgba(0,0,0,.1);
+}
+
 
   .text-bundy-green {
     font-weight: 600;
@@ -607,10 +621,14 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
+
+
         <div class="modal-body">
 
           <div class="row">
+
             <div class="col-sm-12">
+
               <img class=" ml-auto rounded mx-auto d-block" src="images/common/bundy-beta-icon.svg" width="120px" alt="Bundy Automatic Timesheet Feature"
                 style="border-radius:5px;">
               <h4 class="text-center my-2">
@@ -623,8 +641,8 @@
                 <br>
                 <i class="fa fa-check"></i> Dedicated Support
               </p>
-            </div>
-          </div>
+
+
           <hr>
           <form>
             <div class="row">
@@ -639,10 +657,14 @@
                   <label for="contactFormFullName">Business Name</label>
                   <input type="email" class="form-control" id="contactFormFullName" placeholder="Enter your business name">
                 </div>
+              </div>
+
+
                 <div class="col-sm-12">
                   <div class="form-group">
                     <label for="contactFormEmail">Email address</label>
                     <input type="email" class="form-control" id="contactFormEmail" placeholder="Enter your email address">
+
                     <div class="custom-control custom-checkbox my-3">
                       <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
                       <label class="custom-control-label" for="customCheck1">I agree to the
@@ -650,17 +672,29 @@
                     </div>
 
                   </div>
-                </div>
               </div>
-              <button class="btn btn-success btn-pill btn-block" type="submit" value="Apply for beta access">
-                Apply for beta access
-              </button>
+              <div class="col-sm-12">
+
+                  <button class="btn btn-success btn-pill btn-block" type="submit" value="Apply for beta access">
+                      Apply for beta access
+                    </button>
+      
+
+                </div>
+
           </form>
+        </div>
+
+        </div>
+      </div>
+
           </div>
+
           <div class="modal-footer">
             <button type="button" class="btn btn-outline-light btn-block" data-dismiss="modal">Cancel</button>
             <!-- <button type="button" class="btn btn-success">Proceed</button> -->
           </div>
+
         </div>
       </div>
     </div>
