@@ -28,6 +28,7 @@
 </head>
 
 <style>
+
   p {
     font-family: 'Tajawal', sans-serif;
   }
@@ -154,6 +155,11 @@
     color: #fff;
     background-color: #8DB23A;
   }
+
+
+ .footer { 
+   padding:0%;
+ }
 </style>
 
 
@@ -338,6 +344,7 @@
       </div>
     </div>
   </div>
+  
   <!-- / Features Section -->
 
   <!-- Features Section -->
@@ -554,7 +561,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col">
+              <div class="col-lg-12">
                 <div class="form-group">
                   <label for="exampleInputEmail1">Message</label>
                   <textarea id="exampleInputEmail1" class="form-control mb-4" rows="10" placeholder="Enter your message..." name="message"></textarea>
@@ -569,136 +576,102 @@
   </div>
   <!-- / Contact Section -->
 
-  <!-- Footer Section -->
-  <footer style="height:250px; background-color:#d6d6d6;">
-    <div class="row">
-      <div class="col-sm-12 col-lg-3">
-        <div class="d-flex flex-column">
-          <div class="py-2 justify-content-center">
-            <img src="images/common/bundy-logo-dark.svg" class="p-2 img-fluid mx-auto d-block" alt="Bundy Logo" width="120px">
-          </div>
-          <div class="d-flex justify-content-end">
-            <p> 79 George St,
-              <br> Parramatta, NSW, Australia.
-              <br>
-              <span style="font-size: 0.8em;font-weight: bold;">
-                ABN 98 233 233 233
+    <!-- Footer Section -->
+    <footer style="height:250px; background-color:#d6d6d6;">
 
-              </span>
-
-            </p>
-
-          </div>
-          <div class="d-flex justify-content-center">
-            <!-- <button class="btn btn-outline-dark"> Back to top </button> -->
-
-          </div>
-
-        </div>
-      </div>
-
-      <div class="col-sm-3 text-end">
-      </div>
+              <img src="images/common/bundy-logo-dark.svg" class="img-fluid mx-auto d-block" alt="Bundy Logo" width="120px"> 
+              <p> 79 George St,
+                <br>Parramatta, NSW, Australia.
+                <br>
+                <span style="font-size: 0.8em;font-weight: bold;">
+                  ABN 98 233 233 233
+                </span>
+              </p>  
 
 
-    </div>
-
-
-
-    </div>
-
-
-  </footer>
-  <!-- / Footer Section -->
-
+      </footer>
+      <!-- / Footer Section -->
+    
+    
   <!-- Hero Modal -->
   <div class="modal fade" id="heroSignupModal" tabindex="-1" role="dialog" aria-labelledby="heroSignupModal" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title" id="exampleModalLabel">Join our beta program</h4>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-
-
-        <div class="modal-body">
-
-          <div class="row">
-
-            <div class="col-sm-12">
-
-              <img class=" ml-auto rounded mx-auto d-block" src="images/common/bundy-beta-icon.svg" width="120px" alt="Bundy Automatic Timesheet Feature"
-                style="border-radius:5px;">
-              <h4 class="text-center my-2">
-                Help improve Bundy and be rewarded
-              </h4>
-              <p class="text-center text-bundy-green">
-                <i class="fa fa-check"></i> 6 Months of Premium account access
-                <br>
-                <i class="fa fa-check"></i> Affiliate Program Opt-In
-                <br>
-                <i class="fa fa-check"></i> Dedicated Support
-              </p>
-
-
-          <hr>
-          <form>
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <!-- <div class="modal-header">
+            <h4 class="modal-title text-center" id="exampleModalLabel">Join our beta program</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div> -->
+          <div class="modal-body">
             <div class="row">
               <div class="col-sm-12">
-                <div class="form-group">
-                  <label for="contactFormFullName">Full Name</label>
-                  <input type="email" class="form-control" id="contactFormFullName" placeholder="Enter your full name">
-                </div>
-              </div>
-              <div class="col-sm-12">
-                <div class="form-group">
-                  <label for="contactFormFullName">Business Name</label>
-                  <input type="email" class="form-control" id="contactFormFullName" placeholder="Enter your business name">
-                </div>
-              </div>
 
-
+                  <h3 class="text-center mb-3">
+                      Join our beta program
+                    </h3>
+    
+                  <hr class="pb-1 mt-2">
+                <img class=" ml-auto rounded mx-auto d-block" src="images/common/bundy-beta-icon.svg" width="120px" alt="Bundy Automatic Timesheet Feature">
+                <h4 class="text-center my-2">
+                  Help improve Bundy and be rewarded:
+                </h4>
+                <p class="text-center text-bundy-green">
+                  <i class="fa fa-check"></i> 6 Months of Premium account access
+                  <br>
+                  <i class="fa fa-check"></i> Affiliate Program Opt-In
+                  <br>
+                  <i class="fa fa-check"></i> Dedicated Support
+                </p>
+            <hr>
+            <form>
+              <div class="row">
                 <div class="col-sm-12">
                   <div class="form-group">
-                    <label for="contactFormEmail">Email address</label>
-                    <input type="email" class="form-control" id="contactFormEmail" placeholder="Enter your email address">
-
-                    <div class="custom-control custom-checkbox my-3">
-                      <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
-                      <label class="custom-control-label" for="customCheck1">I agree to the
-                        <a href="">terms and conditions</a> and to be contacted by email.</label>
-                    </div>
-
+                    <label for="contactFormFullName">Full Name</label>
+                    <input type="email" class="form-control" id="contactFormFullName" placeholder="Enter your full name">
                   </div>
-              </div>
-              <div class="col-sm-12">
-
-                  <button class="btn btn-success btn-pill btn-block" type="submit" value="Apply for beta access">
-                      Apply for beta access
-                    </button>
-      
-
                 </div>
-
-          </form>
-        </div>
-
-        </div>
-      </div>
-
+                <div class="col-sm-12">
+                  <div class="form-group">
+                    <label for="contactFormFullName">Business Name</label>
+                    <input type="email" class="form-control" id="contactFormFullName" placeholder="Enter your business name">
+                  </div>
+                </div>
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <label for="contactFormEmail">Email address</label>
+                      <input type="email" class="form-control" id="contactFormEmail" placeholder="Enter your email address">
+                      <div class="custom-control custom-checkbox my-3">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
+                        <label class="custom-control-label" for="customCheck1">I agree to the
+                          <a href="">terms and conditions</a> and to be contacted by email.</label>
+                      </div>
+  
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <button class="btn btn-success btn-pill btn-block" type="submit" value="Apply for beta access">
+                        Apply for beta access
+                      </button>
+                  </div>
+                </div>
+            </form>
           </div>
-
-          <div class="modal-footer">
-            <button type="button" class="btn btn-outline-light btn-block" data-dismiss="modal">Cancel</button>
-            <!-- <button type="button" class="btn btn-success">Proceed</button> -->
-          </div>
-
         </div>
-      </div>
-    </div>
-
+  
+            </div>
+  
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-light btn-block" data-dismiss="modal">Cancel</button>
+              <!-- <button type="button" class="btn btn-success">Proceed</button> -->
+            </div>
+  
+          </div>
+        </div>
+  </div>
+  
+    
 
     <!-- JavaScript Dependencies -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
