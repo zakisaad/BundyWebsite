@@ -17,6 +17,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Tajawal:200,300,400,500,700,800,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700,900" rel="stylesheet">
+  <!-- Animate -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+  <!-- Bootstrap notification library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-notify/0.2.0/css/bootstrap-notify.min.css" />
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -159,9 +163,16 @@
   }
 
 
-  .footer {
-    padding: 0%;
-  }
+  [data-notify="progressbar"] {
+	margin-bottom: 0px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 5px;
+}
+
+
 </style>
 
 
@@ -697,7 +708,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
   <!-- Hubspot Analytics -->
   <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4620392.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pnotify/3.2.1/pnotify.js"></script>
+  <!-- Bootstrap notification library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-notify/0.2.0/js/bootstrap-notify.min.js"></script>  
   <script>
 
     // Hubspot form watcher
@@ -726,18 +738,24 @@
           data: $(".hubspotForm").serialize(),
           success: function (succ) {
 
-            PNotify.notice({
-              title: 'Regular Notice',
-              text: 'Check me out! I\'m a notice.'
-            });
+            notify({
+              // options
+              message: 'Hello World' 
+            },{
+              // settings
+              type: 'danger'
+            })
 
           },
           error: function (err) {
 
-            PNotify.notice({
-              title: 'Regular Notice',
-              text: 'Check me out! I\'m a notice.'
-            });
+            notify({
+              // options
+              message: 'Hello World' 
+            },{
+              // settings
+              type: 'danger'
+            })
 
           }
         });
