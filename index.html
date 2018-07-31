@@ -552,13 +552,13 @@
               <div class="col-md-6 col-sm-12">
                 <div class="form-group">
                   <label for="contactFormFullName">Full Name</label>
-                  <input type="email" class="form-control" id="contactFormFullName" placeholder="Enter your full name">
+                  <input type="email" class="form-control" id="contactFormFullName2222" placeholder="Enter your full name">
                 </div>
               </div>
               <div class="col-md-6 col-sm-12">
                 <div class="form-group">
                   <label for="contactFormEmail">Email address</label>
-                  <input type="email" class="form-control" id="contactFormEmail" placeholder="Enter your email address">
+                  <input type="email" class="form-control" id="contactFormEmail2222" placeholder="Enter your email address">
                 </div>
               </div>
             </div>
@@ -566,7 +566,7 @@
               <div class="col-lg-12">
                 <div class="form-group">
                   <label for="exampleInputEmail1">Message</label>
-                  <textarea id="exampleInputEmail1" class="form-control mb-4" rows="10" placeholder="Enter your message..." name="message"></textarea>
+                  <textarea id="exampleInputEmail1222" class="form-control mb-4" rows="10" placeholder="Enter your message..." name="message"></textarea>
                 </div>  
               </div>
             </div>
@@ -629,26 +629,26 @@
                 <i class="fa fa-check"></i> Dedicated Support
               </p>
               <hr>
-              <form>
+              <form class="hubspotForm">
                 <div class="row">
                   <div class="col-sm-12">
                     <div class="form-group">
                       <label for="contactFormFullName">Full Name</label>
-                      <input type="email" class="form-control" id="contactFormFullName" placeholder="Enter your full name">
+                      <input type="text" name="name" class="form-control" id="contactFormFullName" placeholder="Enter your full name">
                     </div>
                   </div>
                   <div class="col-sm-12">
                     <div class="form-group">
-                      <label for="contactFormFullName">Business Name</label>
-                      <input type="email" class="form-control" id="contactFormFullName" placeholder="Enter your business name">
+                      <label for="contactFormBusinessName">Business Name</label>
+                      <input type="text" name="business" class="form-control" id="contactFormBusinessName" placeholder="Enter your business name">
                     </div>
                   </div>
                   <div class="col-sm-12">
                     <div class="form-group">
                       <label for="contactFormEmail">Email address</label>
-                      <input type="email" class="form-control" id="contactFormEmail" placeholder="Enter your email address">
+                      <input type="email" name="email" class="form-control" id="contactFormEmail" placeholder="Enter your email address">
                       <div class="custom-control custom-checkbox my-3">
-                        <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
+                        <input type="checkbox" name="agree" class="custom-control-input" id="customCheck1" checked>
                         <label class="custom-control-label" for="customCheck1">I agree to the
                           <a href="">terms and conditions</a> and to be contacted by email.</label>
                       </div>
@@ -689,6 +689,40 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
   <!-- Hubspot Analytics -->
   <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4620392.js"></script>
+  <script>
+
+  // Hubspot form watcher
+  document
+    .getElementsByClassName('hubspotForm')[0].addEventListener('submit',function(evt){ 
+
+      evt.preventDefault();
+
+      if ($('#contactFormFullName').val() === "") {
+        alert("fill in data")
+        return false;
+      } else if ($('#contactFormBusinessName').val() === "") {
+        alert("fill in data")
+        return false;
+      } else if ($('#contactFormEmail').val() === "") {
+        alert("fill in data")
+        return false;
+      } else if (!$('#customCheck1').is(":checked")) {
+        alert("agree to terms")
+        return false;
+      }
+
+      $.ajax({
+        type: "POST",
+        url: "http://forms.hubspot.com/uploads/form/v2/4620392/eeebf507-8f74-4cea-9656-561e5feb4539",
+        data: $(".hubspotForm").serialize(),
+        success: function(succ) { alert("thanks") },
+        error: function(err) { alert("thanks") }
+      });
+
+      return false; 
+    });
+  
+  </script>
 </body>
 
 </html>
