@@ -17,10 +17,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Tajawal:200,300,400,500,700,800,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700,900" rel="stylesheet">
-  <!-- Animate -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
-  <!-- Bootstrap notification library -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-notify/0.2.0/css/bootstrap-notify.min.css" />
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -708,8 +704,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
   <!-- Hubspot Analytics -->
   <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4620392.js"></script>
-  <!-- Bootstrap notification library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-notify/0.2.0/js/bootstrap-notify.min.js"></script>  
+
   <script>
 
     // Hubspot form watcher
@@ -732,33 +727,13 @@
           return false;
         }
 
-        $.ajax({
-          type: "POST",
-          url: "http://forms.hubspot.com/uploads/form/v2/4620392/eeebf507-8f74-4cea-9656-561e5feb4539",
-          data: $(".hubspotForm").serialize(),
-          success: function (succ) {
-
-            notify({
-              // options
-              message: 'Hello World' 
-            },{
-              // settings
-              type: 'danger'
-            })
-
-          },
-          error: function (err) {
-
-            notify({
-              // options
-              message: 'Hello World' 
-            },{
-              // settings
-              type: 'danger'
-            })
-
-          }
-        });
+      $.ajax({
+        type: "POST",
+        url: "http://forms.hubspot.com/uploads/form/v2/4620392/eeebf507-8f74-4cea-9656-561e5feb4539",
+        data: $(".hubspotForm").serialize(),
+        success: function(succ) { alert("thanks") },
+        error: function(err) { alert("thanks") }
+      });
 
 
         return false;
