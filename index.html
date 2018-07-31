@@ -183,9 +183,11 @@
     logged_out_greeting="Hi, How can we help you with your business today?">
   </div>
 
+
   <!-- Welcome Section -->
   <div class="welcome d-flex justify-content-center flex-column">
     <div class="container">
+
       <!-- Navigation -->
       <nav class="navbar navbar-expand-lg navbar-dark pt-4 px-0">
         <a class="navbar-brand mr-5" href="#">
@@ -241,7 +243,6 @@
       <!-- / Navigation -->
     </div>
     <!-- .container -->
-
     <!-- Inner Wrapper -->
     <div class="inner-wrapper mt-auto mb-auto container">
       <div class="row">
@@ -567,7 +568,7 @@
                 <div class="form-group">
                   <label for="exampleInputEmail1">Message</label>
                   <textarea id="exampleInputEmail1222" class="form-control mb-4" rows="10" placeholder="Enter your message..." name="message"></textarea>
-                </div>  
+                </div>
               </div>
             </div>
             <input class="btn btn-success btn-pill d-flex ml-auto mr-auto" type="submit" value="Send Your Message">
@@ -581,18 +582,22 @@
   <!-- Footer Section -->
   <footer style="height:250px; background-color:#d6d6d6;">
     <div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-md-4 py-2">
-                <img src="images/common/bundy-logo-dark.svg" class="img-fluid mx-auto d-block mt-3 py-0" alt="Bundy Logo" width="120px">
-              <p class="text-left" style="margin-left:40%; line-height: 20px;"> 79 George Street, <br> Parramatta, NSW, Australia <br> <span style="font-size: .8em; font-weight: bold;"> ABN 16 617 165 152  </span></p>
-            </div>
-            <div class="col-sm-12 col-md-4  text-center py-2">
-                <p> test </p>
-            </div>
-            <div class="col-sm-4 text-center py-2">
-                <p> test </p>
-            </div>
-          </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-4 py-2">
+          <img src="images/common/bundy-logo-dark.svg" class="img-fluid mx-auto d-block mt-3 py-0" alt="Bundy Logo" width="120px">
+          <p class="text-left" style="margin-left:40%; line-height: 20px;"> 79 George Street,
+            <br> Parramatta, NSW, Australia
+            <br>
+            <span style="font-size: .8em; font-weight: bold;"> ABN 16 617 165 152 </span>
+          </p>
+        </div>
+        <div class="col-sm-12 col-md-4  text-center py-2">
+          <p> test </p>
+        </div>
+        <div class="col-sm-4 text-center py-2">
+          <p> test </p>
+        </div>
+      </div>
     </div>
   </footer>
   <!-- / Footer Section -->
@@ -678,6 +683,9 @@
 
 
 
+
+
+
   <!-- JavaScript Dependencies -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
@@ -689,39 +697,55 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
   <!-- Hubspot Analytics -->
   <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4620392.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pnotify/3.2.1/pnotify.js"></script>
   <script>
 
-  // Hubspot form watcher
-  document
-    .getElementsByClassName('hubspotForm')[0].addEventListener('submit',function(evt){ 
+    // Hubspot form watcher
+    document
+      .getElementsByClassName('hubspotForm')[0].addEventListener('submit', function (evt) {
 
-      evt.preventDefault();
+        evt.preventDefault();
 
-      if ($('#contactFormFullName').val() === "") {
-        alert("fill in data")
-        return false;
-      } else if ($('#contactFormBusinessName').val() === "") {
-        alert("fill in data")
-        return false;
-      } else if ($('#contactFormEmail').val() === "") {
-        alert("fill in data")
-        return false;
-      } else if (!$('#customCheck1').is(":checked")) {
-        alert("agree to terms")
-        return false;
-      }
+        if ($('#contactFormFullName').val() === "") {
+          alert("fill in data")
+          return false;
+        } else if ($('#contactFormBusinessName').val() === "") {
+          alert("fill in data")
+          return false;
+        } else if ($('#contactFormEmail').val() === "") {
+          alert("fill in data")
+          return false;
+        } else if (!$('#customCheck1').is(":checked")) {
+          alert("agree to terms")
+          return false;
+        }
 
-      $.ajax({
-        type: "POST",
-        url: "http://forms.hubspot.com/uploads/form/v2/4620392/eeebf507-8f74-4cea-9656-561e5feb4539",
-        data: $(".hubspotForm").serialize(),
-        success: function(succ) { alert("thanks") },
-        error: function(err) { alert("thanks") }
+        $.ajax({
+          type: "POST",
+          url: "http://forms.hubspot.com/uploads/form/v2/4620392/eeebf507-8f74-4cea-9656-561e5feb4539",
+          data: $(".hubspotForm").serialize(),
+          success: function (succ) {
+
+            PNotify.notice({
+              title: 'Regular Notice',
+              text: 'Check me out! I\'m a notice.'
+            });
+
+          },
+          error: function (err) {
+
+            PNotify.notice({
+              title: 'Regular Notice',
+              text: 'Check me out! I\'m a notice.'
+            });
+
+          }
+        });
+
+
+        return false;
       });
 
-      return false; 
-    });
-  
   </script>
 </body>
 
