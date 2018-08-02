@@ -28,8 +28,32 @@
 </head>
 
 <style>
+
+  .shards-app-promo-page--1 .welcome{
+    height: fit-content!important;
+    background-color:white;
+
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ededed+0,ffffff+100 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+    background: none;
+    border-bottom:1px solid #eaebed;
+  }
+
+  .shards-app-promo-page--1 .welcome:before { 
+
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ededed+2,f2f2f2+34,f7f7f7+65,f2f2f2+100,ffffff+100 */
+      background: rgb(237,237,237); /* Old browsers */
+      background: -moz-linear-gradient(top, rgba(237,237,237,1) 2%, rgba(242,242,242,1) 34%, rgba(247,247,247,1) 65%, rgba(242,242,242,1) 100%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, rgba(237,237,237,1) 2%,rgba(242,242,242,1) 34%,rgba(247,247,247,1) 65%,rgba(242,242,242,1) 100%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, rgba(237,237,237,1) 2%,rgba(242,242,242,1) 34%,rgba(247,247,247,1) 65%,rgba(242,242,242,1) 100%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+  }
+
   p {
     font-family: 'Tajawal', sans-serif;
+    color: #707070;
+
   }
 
   h1,
@@ -196,9 +220,9 @@
     <div class="container">
 
       <!-- Navigation -->
-      <nav class="navbar navbar-expand-lg navbar-dark pt-4 px-0">
+      <nav class="navbar navbar-light navbar-expand-lg pt-4 px-0">
         <a class="navbar-brand mr-5" href="#">
-          <img src="images/common/bundy-logo.png" class="img-fluid mx-auto d-block mb-0" alt="Bundy Logo" width="45px">
+          <img src="images/common/bundy-logo-dark.svg" class="img-fluid mx-auto d-block mb-0" alt="Bundy Logo" width="45px">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
           aria-expanded="false" aria-label="Toggle navigation">
@@ -206,34 +230,33 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
+            <li class="nav-item ">
+                <a class="nav-link" href="#app-features"> Features</a>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Our Services</a>
+              <a class="nav-link" href="#testimonial-section">Testimonials</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Testimonials</a>
+              <a class="nav-link" href="#pricing-section">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact-section">Contact</a>
             </li>
           </ul>
 
           <!-- Social Icons -->
           <ul class="header-social-icons navbar-nav ml-auto">
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="https://twitter.com/DesignRevision">
                 <i class="fa fa-twitter"></i>
               </a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="https://www.facebook.com/designrevision">
                 <i class="fa fa-facebook"></i>
               </a>
-            </li>
+            <!-- </li>
             <li class="nav-item">
               <a class="nav-link" href="https://dribbble.com/hisk">
                 <i class="fa fa-dribbble"></i>
@@ -241,7 +264,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://github.com/designrevision">
-                <i class="fa fa-github"></i>
+                <i class="fa fa-github"></i> -->
               </a>
             </li>
           </ul>
@@ -253,15 +276,13 @@
     <!-- Inner Wrapper -->
     <div class="inner-wrapper mt-auto mb-auto container">
       <div class="row">
-
         <div class="col-lg-5 col-md-5 col-sm-12 mt-auto mb-auto mr-0">
-          <h1 class="welcome-heading display-4 text-white">One app to run your
+          <h1 class="welcome-heading display-4"><b style="letter-spacing: -3px; font-weight: 600; line-height: -20;"> Bundy </b>helps you <br>run your
             <span style="font-weight:600; color:#8DB23A;"> business </span>
           </h1>
           <!-- <p class="text-muted">Keep your files in sync using the most secure and advanced solution to date.</p> -->
-          <p class=" header-test text-white mt-4" style="font-size:1.2em;">
-            <span style="font-weight:600; color:#8DB23A;"> Bundy </span> takes care of timesheeting, hour tracking and scheduling automatically and out of your sight so
-            you can focus on the important things.</p>
+          <p class=" header-test  mt-4" style="font-size:1.2em;">
+            <span style="font-weight:600; "> Bundy </span> is your virtual business assistant,  automatically letting you know who's at work and when, in real time.</p>
 
           <div class="mt-auto">
             <!-- <a href="https://designrevision.com/download/shards" class="btn btn-lg btn-block btn-outline-white btn-pill align-self-center">
@@ -269,29 +290,30 @@
               <span style="color:#8DB23A;"> in 5 minutes </span>
             </a> -->
 
-            <button class="btn btn-lg btn-block btn-outline-white btn-pill align-self-center" data-toggle="modal" data-target="#heroSignupModal">
-              <i class="fa fa-run mr-2"></i> See what makes Bundy
-              <span style="color:#8DB23A;"> different </span>
+
+
+                <button class="btn btn-lg btn-block btn-success btn-pill align-self-center" data-toggle="modal" data-target="#heroSignupModal">
+              <i class="fa fa-run mr-2"></i> Sign up to the  
+              <span style="font-weight: bold;"> Free Beta </span>
               </a>
 
           </div>
 
-          <div class="d-block mb-4 mt-2">
+          <!-- <div class="d-block mb-4 mt-2">
             <a href="https://designrevision.com/download/shards">
               <img class="w-25 mt-2 mr-3" src="images/app-promo/badge-apple-store.png" alt="Get it on Apple Store">
             </a>
             <a href="https://designrevision.com/download/shards">
               <img class="w-25 mt-2" src="images/app-promo/badge-google-play-store.png" alt="Get it on Google Play Store">
             </a>
-          </div>
+          </div> -->
 
 
         </div>
 
 
         <div class="col-lg-4 col-md-5 col-sm-12 ml-auto py-4">
-          <img class="iphone-mockup ml-auto" src="images/app-promo/bundy-app-main.png" alt="iPhone App Mockup - Shards App Promo Demo"
-            style="border-radius:5px;">
+          <img class="iphone-mockup ml-auto" src="images/common/iphone-bundy.png" alt="iPhone App Mockup - Shards App Promo Demo" width="250px" style="border-radius:5px;">
         </div>
       </div>
     </div>
@@ -304,15 +326,15 @@
   <div id="app-features" class="app-features section">
     <div class="container-fluid">
       <div class="row">
-
         <!-- App Features Wrapper -->
         <div class="app-features-wrapper col-lg-12 col-md-12 col-sm-12 py-5 mx-auto">
           <div class="container">
-            <h2 class="my-3 py-2 text-center">This is how Bundy changes the way you work</h2>
+            <h2 class="mb-4 mb-4 text-center">This is how Bundy changes the way you <span class="text-bundy-green"> operate</span></h2>
+            <hr>
 
             <div class="feature py-4 d-flex justify-content-center">
               <div class=" text-white mr-5">
-                <img class=" ml-auto" src="images/app-promo/bundy-timesheet-icon.png" width="120px" alt="Bundy Automatic Timesheet Feature"
+                <img class="ml-auto" src="images/app-promo/bundy-timesheet-icon.png" width="120px" alt="Bundy Automatic Timesheet Feature"
                   style="border-radius:5px;">
               </div>
               <div class="text-center">
@@ -322,6 +344,8 @@
                   <span style="font-weight:600; color:#8DB23A;">TrueTime™ </span> records daily. </p>
               </div>
             </div>
+
+
 
             <div class="feature py-4 d-flex justify-content-center">
               <div class="text-center">
@@ -415,9 +439,8 @@
   <!-- / Features Section -->
 
   <!-- Testimonials Section -->
-  <div class="testimonials section py-4" style="background-color:#fdfdfd">
+  <div class="testimonials section py-4" style="background-color:#fdfdfd" id="testimonial-section">
     <h2 class="my-3 py-2 text-center">Bundy is trusted by </h2>
-
     <div class="container py-5">
       <div class="row">
         <div class="col-md-4 testimonial text-center">
@@ -454,14 +477,14 @@
   <!-- / Testimonials Section -->
 
   <!-- Our Blog Section -->
-  <div class="blog section section-invert py-4">
+  <div class="blog section section-invert py-4" id="pricing-section">
     <h2 class="my-3 py-2 text-center">Clear and Transparent Pricing</h2>
     <p class="text-center"> Ultimate flexibility, change plans at anytime with no additional fees! We're all about transparency at Bundy.</p>
     <div class="container">
+
       <div class="py-4">
         <div class="row">
           <div class="card-deck">
-
             <div class="col-md-12 col-lg-4">
               <div class="card mb-4">
                 <img class="card-img-top" src="images/common/card-4.jpg" alt="Card image cap">
@@ -532,8 +555,8 @@
   <!-- / Our Blog Section -->
 
   <!-- Subscribe Section -->
-  <div class="subscribe section bg-dark py-4">
-    <h3 class="section-title text-center text-white m-5">Newsletter</h3>
+  <div class="subscribe section-invert py-4">
+    <h3 class=" text-center m-5">Sign up to stay updated</h3>
     <p class="text-muted col-md-6 text-center mx-auto">Enter your email to stay up to date with our latest news and offers. By entering and submitting your email, you provide
       consent to be contacted by Bundy.</p>
     <form class="form-inline d-table mb-5 mx-auto" action="/">
@@ -550,7 +573,7 @@
   <!-- / Subscribe Section -->
 
   <!-- Contact Section -->
-  <div class="contact section-invert py-4">
+  <div class="contact section-invert py-4" id="contact-section">
     <h3 class="section-title text-center m-5">Contact Us</h3>
     <div class="container py-4">
       <div class="row justify-content-md-center px-4">
@@ -587,7 +610,7 @@
   <!-- / Contact Section -->
 
   <!-- Footer Section -->
-  <footer style="height:250px; background-color:#d6d6d6;">
+  <footer style="height:fit-content; background-color:#e6e6e6;">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-4 py-2">
@@ -599,10 +622,8 @@
           </p>
         </div>
         <div class="col-sm-12 col-md-4  text-center py-2">
-          <p> test </p>
         </div>
         <div class="col-sm-4 text-center py-2">
-          <p> test </p>
         </div>
       </div>
     </div>
