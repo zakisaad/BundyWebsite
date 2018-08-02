@@ -555,9 +555,9 @@
   <!-- / Our Blog Section -->
 
   <!-- Subscribe Section -->
-  <div class="subscribe section-invert py-4">
-    <h3 class=" text-center m-5">Sign up to stay updated</h3>
-    <p class="text-muted col-md-6 text-center mx-auto">Enter your email to stay up to date with our latest news and offers. By entering and submitting your email, you provide
+  <div class="subscribe section-invert py-4" style="background-color:rgb(242, 242, 242); border-bottom:1px solid #eaebed">
+    <h2 class=" text-center m-5">Stay updated</h3>
+    <p class="text-muted col-md-6 text-center mx-auto">Enter your email to stay up to date with our latest news and offers. <br>By entering and submitting your email, you provide
       consent to be contacted by Bundy.</p>
     <form class="form-inline d-table mb-5 mx-auto" action="/">
       <div class="form-group mx-sm-3 mb-2">
@@ -565,16 +565,15 @@
           <input type="email" class="form-control" id="inputPassword2" placeholder="Email address">
         </div>
         <button type="submit" class="btn btn-success mb-2">Sign Up</button>
-
       </div>
-
     </form>
   </div>
   <!-- / Subscribe Section -->
 
   <!-- Contact Section -->
   <div class="contact section-invert py-4" id="contact-section">
-    <h3 class="section-title text-center m-5">Contact Us</h3>
+    <h2 class=" text-center m-5">Get in touch</h2>
+    <p class="text-muted col-md-6 text-center mx-auto"> If you would like to get in touch, please fill out the form below and one of our representatives will be in touch shortly.</p>
     <div class="container py-4">
       <div class="row justify-content-md-center px-4">
         <div class="contact-form col-sm-12 col-md-10 col-lg-7 p-4 mb-4 card">
@@ -735,16 +734,16 @@
         evt.preventDefault();
 
         if ($('#contactFormFullName').val() === "") {
-          alert("fill in data")
+          alert("Please fill in the form to submit your application.")
           return false;
         } else if ($('#contactFormBusinessName').val() === "") {
-          alert("fill in data")
+          alert("Please fill in the form to submit your application.")
           return false;
         } else if ($('#contactFormEmail').val() === "") {
-          alert("fill in data")
+          alert("Please fill in the form to submit your application.")
           return false;
         } else if (!$('#customCheck1').is(":checked")) {
-          alert("agree to terms")
+          alert("Please fill in the form to submit your application.")
           return false;
         }
 
@@ -752,8 +751,8 @@
         type: "POST",
         url: "http://forms.hubspot.com/uploads/form/v2/4620392/eeebf507-8f74-4cea-9656-561e5feb4539",
         data: $(".hubspotForm").serialize(),
-        success: function(succ) { alert("thanks") },
-        error: function(err) { alert("thanks") }
+        success: function(succ) { alert("Thanks for providing your details, we will be in contact shortly.") },
+        error: function(err) { alert("Thanks for providing your details, we will be in contact shortly.") }
       });
 
 
