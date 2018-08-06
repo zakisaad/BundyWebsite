@@ -29,34 +29,42 @@
 
 <style>
   .body {
-    background:white;
+    background: white;
   }
 
-  .shards-app-promo-page--1 .welcome{
-    height: fit-content!important;
-    background-color:white;
 
-        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ededed+0,ffffff+100 */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 
+
+  .shards-app-promo-page--1 .welcome {
+    height: fit-content !important;
+    background-color: white;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ededed+0,ffffff+100 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff', GradientType=0);
+    /* IE6-9 */
     background: none;
-    border-bottom:1px solid #eaebed;
+    border-bottom: 1px dashed #f5f5f5;
   }
 
-  .shards-app-promo-page--1 .welcome:before { 
+  .shards-app-promo-page--1 .welcome:before {
 
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7f7f7+0,ffffff+100 */
-background: rgb(247,247,247); /* Old browsers */
-background: -moz-linear-gradient(top, rgba(247,247,247,1) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(247,247,247,1) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(247,247,247,1) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7f7f7+0,ffffff+100 */
+    background: rgb(247, 247, 247);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(247, 247, 247, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(247, 247, 247, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(247, 247, 247, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#ffffff', GradientType=0);
+    /* IE6-9 */
   }
 
   p {
     font-family: 'Tajawal', sans-serif;
     color: #707070;
-
+    font-weight: 400;
   }
 
   h1,
@@ -187,15 +195,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
 
 
   [data-notify="progressbar"] {
-	margin-bottom: 0px;
-	position: absolute;
-	bottom: 0px;
-	left: 0px;
-	width: 100%;
-	height: 5px;
-}
+    margin-bottom: 0px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 5px;
+  }
 
+  .floating-card{
 
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #f7f7f7;
+    box-shadow: 0px 7px 20px 0px #e8e8e85e;
+  }
 </style>
 
 
@@ -234,7 +248,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item ">
-                <a class="nav-link" href="#app-features"> Features</a>
+              <a class="nav-link" href="#app-features"> Features</a>
               </a>
             </li>
             <li class="nav-item">
@@ -259,7 +273,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
               <a class="nav-link" href="https://www.facebook.com/bundysoftware/">
                 <i class="fa fa-facebook"></i>
               </a>
-            <!-- </li>
+              
+              <!-- </li>
             <li class="nav-item">
               <a class="nav-link" href="https://dribbble.com/hisk">
                 <i class="fa fa-dribbble"></i>
@@ -276,29 +291,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
       <!-- / Navigation -->
     </div>
     <!-- .container -->
+
     <!-- Inner Wrapper -->
     <div class="inner-wrapper mt-auto mb-auto container">
       <div class="row">
         <div class="col-lg-5 col-md-5 col-sm-12 mt-auto mb-auto mr-0">
-          <h1 class="welcome-heading display-4"><b style="letter-spacing: -3px; font-weight: 600; line-height: -20;"> Bundy </b>helps you <br>run your
+          <h1 class="welcome-heading display-4">
+            <b style="letter-spacing: -3px; font-weight: 600; line-height: -20;"> Bundy </b>helps you
+            <br>run your
             <span style="font-weight:600; color:#8DB23A;"> business </span>
           </h1>
           <!-- <p class="text-muted">Keep your files in sync using the most secure and advanced solution to date.</p> -->
           <p class=" header-test  mt-4" style="font-size:1.2em;">
-            <span style="font-weight:600; "> Bundy </span> is your virtual business assistant,  automatically letting you know who's at work and when, in real time.</p>
+            <span style="font-weight:600; "> Bundy </span> is your virtual business assistant, automatically letting you know who's at work and when, in real
+            time.</p>
 
           <div class="mt-auto">
-            <!-- <a href="https://designrevision.com/download/shards" class="btn btn-lg btn-block btn-outline-white btn-pill align-self-center">
-              <i class="fa fa-run mr-2"></i> Get started
-              <span style="color:#8DB23A;"> in 5 minutes </span>
-            </a> -->
 
-
-
-                <button class="btn btn-lg btn-block btn-success btn-pill align-self-center" data-toggle="modal" data-target="#heroSignupModal">
-              <i class="fa fa-run mr-2"></i> Sign up to the  
+            <button class="btn btn-lg btn-block btn-success btn-pill align-self-center" data-toggle="modal" data-target="#heroSignupModal">
+              <i class="fa fa-run mr-2"></i> Sign up to the
               <span style="font-weight: bold;"> Free Beta </span>
-              </a>
+            </button>
 
           </div>
 
@@ -316,7 +329,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
 
 
         <div class="col-lg-4 col-md-5 col-sm-12 ml-auto py-4">
-          <img class="iphone-mockup ml-auto" src="images/common/iphone-bundy.png" alt="iPhone App Mockup - Shards App Promo Demo" width="250px" style="border-radius:5px;">
+          <img class="iphone-mockup ml-auto" src="images/common/iphone-bundy.png" alt="iPhone App Mockup - Shards App Promo Demo" width="250px"
+            style="border-radius:5px;" />
         </div>
       </div>
     </div>
@@ -324,118 +338,211 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
   </div>
   <!-- / Welcome Section -->
 
+  <section class="pt-3 mt-3 pb-4 mb-4" style="border-bottom: 1px dashed #efefef;">
+    <div class="container">
 
-    <!-- Features Section -->
-    <div id="app-features" class="section-invert">
-        <div class="container-fluid">
-          <div class="row">
-              <div class="app-features-wrapper col-lg-12 col-md-12 col-sm-12 py-5 mx-auto">
+    <div class="row row-eq-height">
 
-            <h2 class="mb-4 text-center"> See how Bundy works with your business </h2>
-            <p class="text-center">Enter your business details below to find out instantly!</p> 
+      <div class="col-lg-12">
 
-            <div class="col-lg-6 offset-lg-3">
+        <h2 class="text-center"> Why others are choosing <span class="text-bundy-green"> Bundy </span> </h2>
 
-                <form class="hubspotForm">
-                    <div class="row">
-                      <div class="col-sm-12">
-                        <div class="form-group">
-                          <label for="contactFormFullName">What is your business name?</label>
-                          <input type="text" name="name" class="form-control" id="contactFormFullName" placeholder="Enter your business name">
-                        </div>
-                      </div>
+      </div>
 
-                      <div class="col-sm-12">
-                          <div class="form-group">  
-                      <div id="shards-custom-slider">
-                          <input type="hidden" class='custom-slider-input' name="custom-slider-value-1" >
-                          <input type="hidden" class='custom-slider-input' name="custom-slider-value-2" >
-                        </div>
-                      </div>
-                    </div>
+        <div class="col-lg-4 col-sm-12" >
+          <div class="floating-card my-4 py-2 px-4" style="height:200px;" >
 
-                      <div class="col-sm-12">
-                        <div class="form-group">
-                          <div class="custom-control custom-checkbox my-3">
-                            <input type="checkbox" name="agree" class="custom-control-input" id="customCheck1" checked>
-                            <label class="custom-control-label" for="customCheck1">I agree to the
-                              <a href="">terms and conditions</a> and to be contacted by email.</label>
-                          </div>
-    
-                        </div>
-                      </div>
-                      <div class="col-sm-12">
-                        <button class="btn btn-success btn-pill btn-block" type="submit" value="Apply for beta access">
-                          Apply for beta access
-                        </button>
-                      </div>
-                    </div>
-                  </form>
-    
-            </div>
+            <div class="row">
+
+              <div class="col-sm-12 col-lg-4 mt-5">
+                  <img class="iphone-mockup mx-auto d-block" src="images/common/clock-icon.png" alt="Clock Icon" width="80px;"/>
+              </div>
+
+              <div class="col-sm-12 col-lg-8 px-1 pt-2 ">
+                  <h3 class="text-center text-bundy-green"> Over 5 Hours  </h3>
+                  <p class="text-center"> 
+                      Estimated cost savings of 
+                      every full time employee,
+                      per month, usually resultin
+                      in hundreds of dollars saved.
+                  </p>
+              </div>
 
             </div>
+            
           </div>
         </div>
+
+        <div class="col-lg-4 col-sm-12 ">
+            <div class="floating-card my-4 py-2 px-4" style="height:200px;" >
+              <div class="row">
+                <div class="col-sm-12 col-lg-4 mt-5">
+                    <img class="iphone-mockup mx-auto d-block" src="images/common/router-icon.png" alt="Clock Icon" width="80px;"/>
+                </div>
+                <div class="col-sm-12 col-lg-8 px-1 pt-2">
+                    <h3 class="text-center text-bundy-green"> Revolutionary  </h3>
+                    <p class="text-center"> 
+                        Bundy uses your existing wi-fi 
+                        network to automatically detect who is
+                        at work, as soon as they walk through
+                        the door.
+                    </p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+          
+
+          <div class="col-lg-4 col-sm-12">
+              <div class="floating-card my-4 py-2 px-4" style="height:200px;" >
+                <div class="row">
+                  <div class="col-sm-12 col-lg-4 mt-5 ">
+                      <img class="iphone-mockup mx-auto d-block " src="images/common/money-icon.png" alt="Clock Icon" width="80px;"/>
+                  </div>
+                  <div class="col-sm-12 col-lg-8 px-1 pt-2">
+                      <h3 class="text-center text-bundy-green"> Cost Effective  </h3>
+                      <p class="text-center"> 
+                          Bundy's low monthly cost bundled with its 
+                          intuitive, easy to use interface has you up 
+                          and running with minimal time or 
+                          financial investment.
+                        </p>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+    
+
+
       </div>
-      <!-- / Features Section -->
+
+
+    </div>
+  </section>
 
   <!-- Features Section -->
   <div id="app-features" class="app-features section">
-    <div class="container-fluid">
-      <div class="row">
-        <!-- App Features Wrapper -->
-        <div class="app-features-wrapper col-lg-12 col-md-12 col-sm-12 py-5 mx-auto">
-          <div class="container">
-            <h2 class="mb-4 mb-4 text-center">This is how Bundy changes the way you <span class="text-bundy-green"> operate</span></h2>
-
-            <div class="feature py-4 d-flex justify-content-center">
-              <div class=" text-white mr-5">
-                <img class="ml-auto" src="images/app-promo/bundy-timesheet-icon.png" width="120px" alt="Bundy Automatic Timesheet Feature"
-                  style="border-radius:5px;">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- App Features Wrapper -->
+          <div class="app-features-wrapper col-lg-12 col-md-12 col-sm-12 py-3 mx-auto">
+            <div class="container">
+              <h2 class="mb-4 mb-4 text-center">This is how Bundy changes the way you
+                <span class="text-bundy-green"> operate</span>
+              </h2>
+  
+              <div class="feature py-4 d-flex justify-content-center">
+                <div class=" text-white mr-5">
+                  <img class="ml-auto" src="images/app-promo/bundy-timesheet-icon.png" width="120px" alt="Bundy Automatic Timesheet Feature"
+                    style="border-radius:5px;">
+                </div>
+                <div class="text-center">
+                  <h3>No more manual timesheets</h3>
+                  <p class="feature-text">Bundy’s revolutionairy automatic timesheet system creates perfect
+                    <br>
+                    <span style="font-weight:600; color:#8DB23A;">TrueTime™ </span> records daily. </p>
+                </div>
               </div>
-              <div class="text-center">
-                <h3>No more manual timesheets</h3>
-                <p class="feature-text">Bundy’s revolutionairy automatic timesheet system creates perfect
-                  <br>
-                  <span style="font-weight:600; color:#8DB23A;">TrueTime™ </span> records daily. </p>
+  
+  
+  
+              <div class="feature py-4 d-flex justify-content-center">
+                <div class="text-center">
+                  <h3>Collated Employee Records</h3>
+                  <p class="feature-text"> Forget searching email and filing cabinets,
+                    <br> Bundy sorts and stores your employee records in the
+                    <span style="font-weight:600; color:#8DB23A;">cloud</span>,
+                    <br>secured with industry leading technology.
+                  </p>
+                </div>
+                <div class=" text-white ml-5 my-2">
+                  <img class="ml-auto" src="images/app-promo/bundy-cloud-icon.png" width="120px" alt="Bundy Automatic Timesheet Feature" style="border-radius:5px;">
+                </div>
               </div>
-            </div>
-
-
-
-            <div class="feature py-4 d-flex justify-content-center">
-              <div class="text-center">
-                <h3>Collated Employee Records</h3>
-                <p class="feature-text"> Forget searching email and filing cabinets, <br>  Bundy sorts and stores
-                  your employee records in the
-                  <span style="font-weight:600; color:#8DB23A;">cloud</span>, <br>secured with
-                  industry leading technology.
-                </p>
-              </div>
-              <div class=" text-white ml-5 my-2">
-                <img class="ml-auto" src="images/app-promo/bundy-cloud-icon.png" width="120px" alt="Bundy Automatic Timesheet Feature" style="border-radius:5px;">
-              </div>
-            </div>
-
-            <div class="feature py-4 d-flex justify-content-center">
-              <div class=" text-white mr-5 pr-2">
-                <img class=" ml-auto" src="images/app-promo/bundy-user-icon.png" width="120px" alt="Bundy Automatic Timesheet Feature" style="border-radius:5px;">
-              </div>
-              <div class="text-center">
-                <h3>Realtime Workplace Information</h3>
-                <p class="feature-text">Effortlessly view your workplaces in realtime from anywhere
-                  <br> around the
-                  <span style="font-weight:600; color:#8DB23A;">globe.</span>
-                </p>
+  
+              <div class="feature py-4 d-flex justify-content-center">
+                <div class=" text-white mr-5 pr-2">
+                  <img class=" ml-auto" src="images/app-promo/bundy-user-icon.png" width="120px" alt="Bundy Automatic Timesheet Feature" style="border-radius:5px;">
+                </div>
+                <div class="text-center">
+                  <h3>Realtime Workplace Information</h3>
+                  <p class="feature-text">Effortlessly view your workplaces in realtime from anywhere
+                    <br> around the
+                    <span style="font-weight:600; color:#8DB23A;">globe.</span>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- / Features Section -->
+
+  <!-- Conversion Section -->
+  <div id="app-features" class="section-invert">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="app-features-wrapper col-lg-12 col-md-12 col-sm-12 py-5 mx-auto">
+
+          <h2 class="mb-4 text-center"> See how Bundy works with your <span class="text-bundy-green"> business </span> </h2>
+          <p class="text-center">Enter your business details below to find out instantly!</p>
+
+          <div class="col-lg-4 offset-lg-4 ">
+
+              <form class="hubspotForm">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <label for="contactFormFullName">What is your business name?</label>
+                        <input type="text" name="name" class="form-control" id="contactFormFullName" placeholder="Enter your business name">
+                      </div>
+                    </div>
+    
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                          <label for="contactFormFullName">How many people do you currently hire?</label>
+    
+                          <div class="pt-2 mx-2 px-2">
+                              <div id="shards-custom-slider">
+                                  <input type="hidden" class='custom-slider-input' name="custom-slider-value-1">
+                                  <input type="hidden" class='custom-slider-input' name="custom-slider-value-2">
+                                </div>
+                          </div>
+                      </div>
+                    </div>
+    
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <div class="custom-control custom-checkbox my-3">
+                          <input type="checkbox" name="agree" class="custom-control-input" id="customCheck1" checked>
+                          <label class="custom-control-label" for="customCheck1">I agree to the
+                            <a href="">terms and conditions</a> and to be contacted by email.</label>
+                        </div>
+    
+                      </div>
+                    </div>
+                    <div class="col-sm-12">
+                      <button class="btn btn-success btn-pill btn-block" type="submit" value="Apply for beta access">
+                        Get started
+                      </button>
+                    </div>
+                  </div>
+                </form>
+    
+  
+
+          </div>
+
+        </div>
+      </div>
+    </div>
   </div>
   <!-- / Features Section -->
+
 
   <!-- Features Section -->
   <!-- <div id="app-features" class="app-features section">
@@ -496,7 +603,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
 
   <!-- Testimonials Section -->
   <div class="testimonials section py-4" style="background-color:#fdfdfd" id="testimonial-section">
-    <h2 class="my-3 py-2 text-center">Bundy is trusted by business owners <span class="text-bundy-green"> world wide </span></h2>
+    <h2 class="my-3 py-2 text-center">Bundy is trusted by business owners
+      <span class="text-bundy-green"> world wide </span>
+    </h2>
     <div class="container py-5">
       <div class="row">
         <div class="col-md-4 testimonial text-center">
@@ -674,7 +783,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
         <div class="col-sm-12 col-md-4 py-2">
           <img src="images/common/bundy-logo-dark.svg" class="img-fluid mx-auto d-block mt-3 py-0" alt="Bundy Logo" width="120px">
           <p class="text-left" style="margin-left:40%; line-height: 20px;"> Bundy Pty. Ltd.
-            <br> 
+            <br>
             <span style="font-size: .8em; font-weight: bold;"> ABN 16 617 165 152 </span>
           </p>
         </div>
@@ -776,6 +885,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
     crossorigin="anonymous"></script>
+  <script src="./js/shards.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"></script>
@@ -784,26 +894,36 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
   <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4620392.js"></script>
 
   <script> 
-  
-      jQuery('#shards-custom-slider').customSlider({
-        start: [25, 50],
-        tooltips: [true, true],
-        connect: true,
-        range: {
-          'min': 0,
-          'max': 100
+
+    jQuery('#shards-custom-slider').customSlider({
+      start: [1],
+      step: 1,
+      tooltips: true,
+      range: {
+        'min': 1,
+        'max': 51
+      },
+      pips: {
+        mode: 'positions',
+        values: [0, 50, 100],
+        density: 2
+      },
+      format: {
+        to: function (value) {
+          return value + ' Employee/s';
         },
-        pips: {
-          mode: 'positions',
-          values: [0, 25, 50, 75, 100],
-          density: 5
-          }
-      });
-    
-    
-      </script>
-    
-    
+        from: function (value) {
+          return value.replace('', '');
+        }
+      }
+
+
+    });
+
+
+  </script>
+
+
   <script>
 
     // Hubspot form watcher
@@ -826,16 +946,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
           return false;
         }
 
-      $.ajax({
-        type: "POST",
-        url: "http://forms.hubspot.com/uploads/form/v2/4620392/eeebf507-8f74-4cea-9656-561e5feb4539",
-        data: $(".hubspotForm").serialize(),
-        success: function(succ) { alert("Thanks for providing your details, we will be in contact shortly.") },
-        error: function(err) { alert("Thanks for providing your details, we will be in contact shortly.") }
-      });
+        $.ajax({
+          type: "POST",
+          url: "http://forms.hubspot.com/uploads/form/v2/4620392/eeebf507-8f74-4cea-9656-561e5feb4539",
+          data: $(".hubspotForm").serialize(),
+          success: function (succ) { alert("Thanks for providing your details, we will be in contact shortly.") },
+          error: function (err) { alert("Thanks for providing your details, we will be in contact shortly.") }
+        });
 
 
         return false;
+
       });
 
   </script>
