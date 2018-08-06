@@ -325,6 +325,61 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
   <!-- / Welcome Section -->
 
 
+    <!-- Features Section -->
+    <div id="app-features" class="section-invert">
+        <div class="container-fluid">
+          <div class="row">
+              <div class="app-features-wrapper col-lg-12 col-md-12 col-sm-12 py-5 mx-auto">
+
+            <h2 class="mb-4 text-center"> See how Bundy works with your business </h2>
+            <p class="text-center">Enter your business details below to find out instantly!</p> 
+
+            <div class="col-lg-6 offset-lg-3">
+
+                <form class="hubspotForm">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div class="form-group">
+                          <label for="contactFormFullName">What is your business name?</label>
+                          <input type="text" name="name" class="form-control" id="contactFormFullName" placeholder="Enter your business name">
+                        </div>
+                      </div>
+
+                      <div class="col-sm-12">
+                          <div class="form-group">  
+                      <div id="shards-custom-slider">
+                          <input type="hidden" class='custom-slider-input' name="custom-slider-value-1" >
+                          <input type="hidden" class='custom-slider-input' name="custom-slider-value-2" >
+                        </div>
+                      </div>
+                    </div>
+
+                      <div class="col-sm-12">
+                        <div class="form-group">
+                          <div class="custom-control custom-checkbox my-3">
+                            <input type="checkbox" name="agree" class="custom-control-input" id="customCheck1" checked>
+                            <label class="custom-control-label" for="customCheck1">I agree to the
+                              <a href="">terms and conditions</a> and to be contacted by email.</label>
+                          </div>
+    
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <button class="btn btn-success btn-pill btn-block" type="submit" value="Apply for beta access">
+                          Apply for beta access
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+    
+            </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- / Features Section -->
+
   <!-- Features Section -->
   <div id="app-features" class="app-features section">
     <div class="container-fluid">
@@ -380,7 +435,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
       </div>
     </div>
   </div>
-
   <!-- / Features Section -->
 
   <!-- Features Section -->
@@ -557,19 +611,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
   <!-- / Our Blog Section -->
 
   <!-- Subscribe Section -->
-  <div class="subscribe section-invert py-4" style="border-bottom:1px solid #eaebed">
+  <!-- <div class="subscribe section-invert py-4" style="border-bottom:1px solid #eaebed">
     <h2 class=" text-center m-5">Stay updated</h3>
     <p class="text-muted col-md-6 text-center mx-auto">Enter your email to stay up to date with our latest news and offers. <br>By entering and submitting your email, you provide
       consent to be contacted by Bundy.</p>
+
     <form class="form-inline d-table mb-5 mx-auto" action="/">
-      <div class="form-group mx-sm-3 mb-2">
-        <div class="form-group mx-sm-3 mb-2">
-          <input type="email" class="form-control" id="inputPassword2" placeholder="Email address">
-        </div>
-        <button type="submit" class="btn btn-success mb-2">Sign Up</button>
-      </div>
+
+            <div class="form-group mx-sm-3 mb-2">
+                <div class="form-group mx-sm-3 mb-2" >
+                  <input type="email" class="form-control" id="inputPassword2" placeholder="Email address">
+                </div>
+                <button  type="submit" class="btn btn-success mb-2">Sign Up</button>
+              </div>
+        
     </form>
-  </div>
+  </div> -->
   <!-- / Subscribe Section -->
 
   <!-- Contact Section -->
@@ -726,6 +783,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
   <!-- Hubspot Analytics -->
   <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4620392.js"></script>
 
+  <script> 
+  
+      jQuery('#shards-custom-slider').customSlider({
+        start: [25, 50],
+        tooltips: [true, true],
+        connect: true,
+        range: {
+          'min': 0,
+          'max': 100
+        },
+        pips: {
+          mode: 'positions',
+          values: [0, 25, 50, 75, 100],
+          density: 5
+          }
+      });
+    
+    
+      </script>
+    
+    
   <script>
 
     // Hubspot form watcher
@@ -761,6 +839,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
       });
 
   </script>
+
 </body>
 
 </html>
