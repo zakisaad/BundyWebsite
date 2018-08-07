@@ -14,9 +14,11 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="css/shards.min.css?version=2.0.1">
   <link rel="stylesheet" href="css/shards-extras.min.css?version=2.0.1">
+  <link rel="stylesheet" href="css/bundy-stylesheet.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Tajawal:200,300,400,500,700,800,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700,900" rel="stylesheet">
+
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -26,192 +28,6 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 </head>
-
-<style>
-  .body {
-    background: white;
-  }
-
-
-
-
-  .shards-app-promo-page--1 .welcome {
-    height: fit-content !important;
-    background-color: white;
-
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ededed+0,ffffff+100 */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff', GradientType=0);
-    /* IE6-9 */
-    background: none;
-    border-bottom: 1px dashed #f5f5f5;
-  }
-
-  .shards-app-promo-page--1 .welcome:before {
-
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7f7f7+0,ffffff+100 */
-    background: rgb(247, 247, 247);
-    /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(247, 247, 247, 1) 0%, rgba(255, 255, 255, 1) 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(247, 247, 247, 1) 0%, rgba(255, 255, 255, 1) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(247, 247, 247, 1) 0%, rgba(255, 255, 255, 1) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#ffffff', GradientType=0);
-    /* IE6-9 */
-  }
-
-  p {
-    font-family: 'Tajawal', sans-serif;
-    color: #707070;
-    font-weight: 400;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4 {
-    color: #707070;
-    font-family: 'Tajawal', sans-serif;
-    font-weight: 700;
-  }
-
-  .card {
-    transition: all 0.3s ease-in-out;
-
-  }
-
-  .card:hover {
-    transform: scale(1.02, 1.02);
-  }
-
-  .btn.btn-pill {
-    border-radius: 5px;
-  }
-
-  .feature-text {
-    font-size: 1.2em;
-  }
-
-  .btn-outline-success {
-    background-color: transparent;
-    background-image: none;
-    border-color: #8DB23A;
-    color: #8DB23A;
-  }
-
-  .btn-outline-success:hover {
-    color: #fff;
-    background-color: #8DB23A;
-    border-color: #8DB23A;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, .05), 0 4px 10px rgba(142, 178, 58, 0.247);
-  }
-
-
-
-  .text-success {
-    color: #8DB23A !important;
-
-  }
-
-  .btn-success {
-    color: #fff;
-    border-color: #8DB23A;
-    background-color: #8DB23A;
-    box-shadow: none;
-  }
-
-  .btn-success.disabled,
-  .btn-success:disabled {
-    background-color: #8DB23A;
-    border-color: #8DB23A;
-    box-shadow: none;
-    cursor: not-allowed;
-  }
-
-  .btn-success:hover {
-    color: #fff;
-    background-color: #8DB23A;
-    border-color: #8DB23A;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, .05), 0 4px 10px rgba(142, 178, 58, 0.247);
-  }
-
-  .btn-outline-success:not(:disabled):not(.disabled).active,
-  .btn-outline-success:not(:disabled):not(.disabled):active,
-  .show>.btn-outline-success.dropdown-toggle {
-    color: #fff;
-    background-color: #8DB23A;
-    border-color: #8DB23A;
-  }
-
-
-  .btn-success:not(:disabled):not(.disabled).active,
-  .btn-success:not(:disabled):not(.disabled):active,
-  .show>.btn-success.dropdown-toggle {
-    color: #fff;
-    background-color: #8DB23A;
-    border-color: #8DB23A;
-    background-image: none;
-    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125) !important;
-  }
-
-  .btn-outline-success.focus,
-  .btn-outline-success:focus {
-    box-shadow: 0 0 0 3px rgba(141, 178, 58, .05), 0 3px 15px rgba(141, 178, 58, .2), 0 2px 5px rgba(0, 0, 0, .247) !important;
-  }
-
-  .btn-success.focus,
-  .btn-success:focus {
-    box-shadow: 0 0 0 3px rgba(142, 178, 58, 0.2), 0 3px 15px rgba(142, 178, 58, 0.1), 0 2px 5px rgba(0, 0, 0, .1);
-  }
-
-
-  .text-bundy-green {
-    font-weight: 600;
-    color: #8DB23A;
-  }
-
-  .text-bundy-green {
-    font-weight: 600;
-    color: #8DB23A;
-  }
-
-  .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-    background-color: #8DB23A;
-  }
-
-
-  .custom-control-input:checked~.custom-control-label::before {
-    color: #fff;
-    border-color: transparent;
-    background-color: #8DB23A;
-    box-shadow: none;
-  }
-
-  .custom-control-input:checked~.custom-control-label::before {
-    color: #fff;
-    background-color: #8DB23A;
-  }
-
-
-  [data-notify="progressbar"] {
-    margin-bottom: 0px;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    height: 5px;
-  }
-
-  .floating-card{
-
-    background-color: #fff;
-    border-radius: 5px;
-    border: 1px solid #f7f7f7;
-    box-shadow: 0px 7px 20px 0px #e8e8e85e;
-  }
-</style>
-
 
 
 <body class="shards-app-promo-page--1">
@@ -249,7 +65,6 @@
           <ul class="navbar-nav">
             <li class="nav-item ">
               <a class="nav-link" href="#app-features"> Features</a>
-              </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#testimonial-section">Testimonials</a>
@@ -270,10 +85,13 @@
               </a>
             </li> -->
             <li class="nav-item">
-              <a class="nav-link" href="https://www.facebook.com/bundysoftware/">
+              <!-- <a class="nav-link" href="https://www.facebook.com/bundysoftware/">
                 <i class="fa fa-facebook"></i>
-              </a>
-              
+              </a> -->
+
+              <!-- <button class="btn btn-outline-dark"> Log in </button> 
+              <button class="btn btn-outline-dark"> Sign up </button>  -->
+
               <!-- </li>
             <li class="nav-item">
               <a class="nav-link" href="https://dribbble.com/hisk">
@@ -283,7 +101,6 @@
             <li class="nav-item">
               <a class="nav-link" href="https://github.com/designrevision">
                 <i class="fa fa-github"></i> -->
-              </a>
             </li>
           </ul>
         </div>
@@ -304,7 +121,8 @@
           <!-- <p class="text-muted">Keep your files in sync using the most secure and advanced solution to date.</p> -->
           <p class=" header-test  mt-4" style="font-size:1.2em;">
             <span style="font-weight:600; "> Bundy </span> is your virtual business assistant, automatically letting you know who's at work and when, in real
-            time.</p>
+            time.
+          </p>
 
           <div class="mt-auto">
 
@@ -338,83 +156,60 @@
   </div>
   <!-- / Welcome Section -->
 
-  <section class="pt-3 mt-3 pb-4 mb-4" style="border-bottom: 1px dashed #efefef;">
+  <section style="border-bottom: 1px dashed #efefef; border-top: 1px dashed #efefef;">
     <div class="container">
-
-    <div class="row row-eq-height">
-
-      <div class="col-lg-12">
-
-        <h2 class="text-center"> Why others are choosing <span class="text-bundy-green"> Bundy </span> </h2>
-
-      </div>
-
-        <div class="col-lg-4 col-sm-12" >
-          <div class="floating-card my-4 py-2 px-4" style="height:200px;" >
-
+      <div class="row">
+        <div class="col-lg-4 col-sm-12">
+          <div class="floating-card my-4 py-2 px-4">
             <div class="row">
-
-              <div class="col-sm-12 col-lg-4 mt-5">
-                  <img class="iphone-mockup mx-auto d-block" src="images/common/clock-icon.png" alt="Clock Icon" width="80px;"/>
+              <div class="col-sm-12 col-lg-4 d-flex ">
+                <img class=" mx-auto  align-self-center" src="images/common/clock-icon.png" alt="Clock Icon" width="80px;" />
               </div>
-
               <div class="col-sm-12 col-lg-8 px-1 pt-2 ">
-                  <h3 class="text-center text-bundy-green"> Over 5 Hours  </h3>
-                  <p class="text-center"> 
-                      Estimated cost savings of 
-                      every full time employee,
-                      per month, usually resultin
-                      in hundreds of dollars saved.
-                  </p>
+                <h3 class="text-center text-bundy-green"> Instant Savings </h3>
+                <p class="text-center">
+                  3-4 Hours saved every month for each employee, usually resulting in hundreds of dollars saved.
+                </p>
               </div>
 
             </div>
-            
+
           </div>
         </div>
 
         <div class="col-lg-4 col-sm-12 ">
-            <div class="floating-card my-4 py-2 px-4" style="height:200px;" >
-              <div class="row">
-                <div class="col-sm-12 col-lg-4 mt-5">
-                    <img class="iphone-mockup mx-auto d-block" src="images/common/router-icon.png" alt="Clock Icon" width="80px;"/>
-                </div>
-                <div class="col-sm-12 col-lg-8 px-1 pt-2">
-                    <h3 class="text-center text-bundy-green"> Revolutionary  </h3>
-                    <p class="text-center"> 
-                        Bundy uses your existing wi-fi 
-                        network to automatically detect who is
-                        at work, as soon as they walk through
-                        the door.
-                    </p>
-                </div>
+          <div class="floating-card my-4 py-2 px-4">
+            <div class="row">
+              <div class="col-sm-12 col-lg-4 d-flex ">
+                <img class=" mx-auto  align-self-center" src="images/common/router-icon.png" alt="Clock Icon" width="80px;" />
               </div>
-              
+              <div class="col-sm-12 col-lg-8 px-1 pt-2">
+                <h3 class="text-center text-bundy-green"> Hands off </h3>
+                <p class="text-center">
+                  Bundy uses your existing wi-fi network to automatically detect who is at work, as soon as they walk through the door.
+                </p>
+              </div>
             </div>
           </div>
+        </div>
 
-          
-
-          <div class="col-lg-4 col-sm-12">
-              <div class="floating-card my-4 py-2 px-4" style="height:200px;" >
-                <div class="row">
-                  <div class="col-sm-12 col-lg-4 mt-5 ">
-                      <img class="iphone-mockup mx-auto d-block " src="images/common/money-icon.png" alt="Clock Icon" width="80px;"/>
-                  </div>
-                  <div class="col-sm-12 col-lg-8 px-1 pt-2">
-                      <h3 class="text-center text-bundy-green"> Cost Effective  </h3>
-                      <p class="text-center"> 
-                          Bundy's low monthly cost bundled with its 
-                          intuitive, easy to use interface has you up 
-                          and running with minimal time or 
-                          financial investment.
-                        </p>
-                  </div>
-                </div>
-                
+        <div class="col-lg-4 col-sm-12">
+          <div class="floating-card my-4 py-2 px-4">
+            <div class="row">
+              <div class="col-sm-12 col-lg-4 d-flex ">
+                <img class=" mx-auto  align-self-center" src="images/common/money-icon.png" alt="Clock Icon" width="80px;" />
+              </div>
+              <div class="col-sm-12 col-lg-8 px-1 pt-2">
+                <h3 class="text-center text-bundy-green"> Cost Effective </h3>
+                <p class="text-center">
+                  Bundy's low monthly cost bundled with its intuitive, easy to use interface has you up and running in no time.
+                </p>
               </div>
             </div>
-    
+
+          </div>
+        </div>
+
 
 
       </div>
@@ -424,63 +219,63 @@
   </section>
 
   <!-- Features Section -->
-  <div id="app-features" class="app-features section">
-      <div class="container-fluid">
-        <div class="row">
-          <!-- App Features Wrapper -->
-          <div class="app-features-wrapper col-lg-12 col-md-12 col-sm-12 py-3 mx-auto">
-            <div class="container">
-              <h2 class="mb-4 mb-4 text-center">This is how Bundy changes the way you
-                <span class="text-bundy-green"> operate</span>
-              </h2>
-  
-              <div class="feature py-4 d-flex justify-content-center">
-                <div class=" text-white mr-5">
-                  <img class="ml-auto" src="images/app-promo/bundy-timesheet-icon.png" width="120px" alt="Bundy Automatic Timesheet Feature"
-                    style="border-radius:5px;">
-                </div>
-                <div class="text-center">
-                  <h3>No more manual timesheets</h3>
-                  <p class="feature-text">Bundy’s revolutionairy automatic timesheet system creates perfect
-                    <br>
-                    <span style="font-weight:600; color:#8DB23A;">TrueTime™ </span> records daily. </p>
-                </div>
+  <div id="app-features" class="app-features section ">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- App Features Wrapper -->
+        <div class="app-features-wrapper col-lg-12 col-md-12 col-sm-12 py-3 mx-auto">
+          <div class="container">
+            <h2 class="mb-4 mb-4 text-center">This is how Bundy changes the way you
+              <span class="text-bundy-green"> operate</span>
+            </h2>
+
+            <div class="feature py-4 d-flex justify-content-center">
+              <div class=" text-white mr-5">
+                <img class="ml-auto" src="images/app-promo/bundy-timesheet-icon.png" width="120px" alt="Bundy Automatic Timesheet Feature"
+                  style="border-radius:5px;">
               </div>
-  
-  
-  
-              <div class="feature py-4 d-flex justify-content-center">
-                <div class="text-center">
-                  <h3>Collated Employee Records</h3>
-                  <p class="feature-text"> Forget searching email and filing cabinets,
-                    <br> Bundy sorts and stores your employee records in the
-                    <span style="font-weight:600; color:#8DB23A;">cloud</span>,
-                    <br>secured with industry leading technology.
-                  </p>
-                </div>
-                <div class=" text-white ml-5 my-2">
-                  <img class="ml-auto" src="images/app-promo/bundy-cloud-icon.png" width="120px" alt="Bundy Automatic Timesheet Feature" style="border-radius:5px;">
-                </div>
+              <div class="text-center">
+                <h3>No more manual timesheets</h3>
+                <p class="feature-text">Bundy’s revolutionairy automatic timesheet system creates perfect
+                  <br>
+                  <span style="font-weight:600; color:#8DB23A;">TrueTime™ </span> records daily. </p>
               </div>
-  
-              <div class="feature py-4 d-flex justify-content-center">
-                <div class=" text-white mr-5 pr-2">
-                  <img class=" ml-auto" src="images/app-promo/bundy-user-icon.png" width="120px" alt="Bundy Automatic Timesheet Feature" style="border-radius:5px;">
-                </div>
-                <div class="text-center">
-                  <h3>Realtime Workplace Information</h3>
-                  <p class="feature-text">Effortlessly view your workplaces in realtime from anywhere
-                    <br> around the
-                    <span style="font-weight:600; color:#8DB23A;">globe.</span>
-                  </p>
-                </div>
+            </div>
+
+
+
+            <div class="feature py-4 d-flex justify-content-center">
+              <div class="text-center">
+                <h3>Collated Employee Records</h3>
+                <p class="feature-text"> Forget searching email and filing cabinets,
+                  <br> Bundy sorts and stores your employee records in the
+                  <span style="font-weight:600; color:#8DB23A;">cloud</span>,
+                  <br>secured with industry leading technology.
+                </p>
+              </div>
+              <div class=" text-white ml-5 my-2">
+                <img class="ml-auto" src="images/app-promo/bundy-cloud-icon.png" width="120px" alt="Bundy Automatic Timesheet Feature" style="border-radius:5px;">
+              </div>
+            </div>
+
+            <div class="feature py-4 d-flex justify-content-center">
+              <div class=" text-white mr-5 pr-2">
+                <img class=" ml-auto" src="images/app-promo/bundy-user-icon.png" width="120px" alt="Bundy Automatic Timesheet Feature" style="border-radius:5px;">
+              </div>
+              <div class="text-center">
+                <h3>Realtime Workplace Information</h3>
+                <p class="feature-text">Effortlessly view your workplaces in realtime from anywhere
+                  <br> around the
+                  <span style="font-weight:600; color:#8DB23A;">globe.</span>
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- / Features Section -->
+  </div>
+  <!-- / Features Section -->
 
   <!-- Conversion Section -->
   <div id="app-features" class="section-invert">
@@ -488,52 +283,54 @@
       <div class="row">
         <div class="app-features-wrapper col-lg-12 col-md-12 col-sm-12 py-5 mx-auto">
 
-          <h2 class="mb-4 text-center"> See how Bundy works with your <span class="text-bundy-green"> business </span> </h2>
+          <h2 class="mb-4 text-center"> See how Bundy works with your
+            <span class="text-bundy-green"> business </span>
+          </h2>
           <p class="text-center">Enter your business details below to find out instantly!</p>
 
           <div class="col-lg-4 offset-lg-4 ">
 
-              <form class="hubspotForm">
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <div class="form-group">
-                        <label for="contactFormFullName">What is your business name?</label>
-                        <input type="text" name="name" class="form-control" id="contactFormFullName" placeholder="Enter your business name">
+            <form class="">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="form-group">
+                    <label for="contactFormFullName">What is your business name?</label>
+                    <input type="text" name="name" class="form-control" id="contactFormFullName" placeholder="Enter your business name">
+                  </div>
+                </div>
+
+                <div class="col-sm-12">
+                  <div class="form-group">
+                    <label for="contactFormFullName">How many people do you currently hire?</label>
+
+                    <div class="pt-2 mx-2 px-2 my-2">
+                      <div id="shards-custom-slider">
+                        <input type="hidden" class='custom-slider-input' name="custom-slider-value-1">
+                        <input type="hidden" class='custom-slider-input' name="custom-slider-value-2">
                       </div>
-                    </div>
-    
-                    <div class="col-sm-12">
-                      <div class="form-group">
-                          <label for="contactFormFullName">How many people do you currently hire?</label>
-    
-                          <div class="pt-2 mx-2 px-2">
-                              <div id="shards-custom-slider">
-                                  <input type="hidden" class='custom-slider-input' name="custom-slider-value-1">
-                                  <input type="hidden" class='custom-slider-input' name="custom-slider-value-2">
-                                </div>
-                          </div>
-                      </div>
-                    </div>
-    
-                    <div class="col-sm-12">
-                      <div class="form-group">
-                        <div class="custom-control custom-checkbox my-3">
-                          <input type="checkbox" name="agree" class="custom-control-input" id="customCheck1" checked>
-                          <label class="custom-control-label" for="customCheck1">I agree to the
-                            <a href="">terms and conditions</a> and to be contacted by email.</label>
-                        </div>
-    
-                      </div>
-                    </div>
-                    <div class="col-sm-12">
-                      <button class="btn btn-success btn-pill btn-block" type="submit" value="Apply for beta access">
-                        Get started
-                      </button>
                     </div>
                   </div>
-                </form>
-    
-  
+                </div>
+
+                <div class="col-sm-12">
+                  <div class="form-group">
+                    <div class="custom-control custom-checkbox my-4">
+                      <input type="checkbox" name="agree" class="custom-control-input" id="customCheck1" checked>
+                      <label class="custom-control-label" for="customCheck1">I agree to the
+                        <a href="">terms and conditions</a> and to be contacted by email.</label>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <button class="btn btn-success btn-pill btn-block" type="submit" value="">
+                    See how we can help
+                  </button>
+                </div>
+              </div>
+            </form>
+
+
 
           </div>
 
@@ -787,9 +584,11 @@
             <span style="font-size: .8em; font-weight: bold;"> ABN 16 617 165 152 </span>
           </p>
         </div>
-        <div class="col-sm-12 col-md-4  text-center py-2">
+        <div class="col-sm-12 col-md-4  text-center pt-5 mt-5">
+          <button class="btn btn-sm btn-block btn-outline-dark" href="#contactSection"> Privacy information </button>
+          <button class="btn btn-sm btn-block btn-outline-dark" href="#contactSection"> Terms & Conditions </button>
         </div>
-        <div class="col-sm-4 text-center py-2">
+        <div class="col-sm-4 text-center py-3">
         </div>
       </div>
     </div>
