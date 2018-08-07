@@ -172,10 +172,10 @@
     height: 5px;
   }
 
-  .floating-card{
+  .card{
 
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: .625rem;
     border: 1px solid #f7f7f7;
     box-shadow: 0px 7px 20px 0px #e8e8e85e;
   }
