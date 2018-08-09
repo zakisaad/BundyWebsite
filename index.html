@@ -894,10 +894,6 @@
 
         evt.preventDefault();
 
-
-
-        return false;
-
         if ($('#contactFormFullName').val() === "") {
           new PNotify({
             text: 'Enter full name to continue',
@@ -934,8 +930,6 @@
               text: 'We\'ll be in touch soon.',
               type: 'success'
             });
-
-            $("#heroSignupModal").modal('hide');
           },
           error: function (err) {
             new PNotify({
@@ -943,11 +937,10 @@
               text: 'We\'ll be in touch soon.',
               type: 'success'
             });
-
-            $("#heroSignupModal").modal('hide');
           }
         });
 
+        $("#heroSignupModal").modal('hide');
 
         return false;
 
