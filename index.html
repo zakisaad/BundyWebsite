@@ -32,6 +32,8 @@
         rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700,900"
         rel="stylesheet">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/pnotify/3.2.1/pnotify.css" />
 
 
   <link rel="apple-touch-icon"
@@ -851,6 +853,7 @@
           async
           defer
           src="//js.hs-scripts.com/4620392.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pnotify/3.2.1/pnotify.js"></script>
 
   <script> 
 
@@ -892,16 +895,28 @@
         evt.preventDefault();
 
         if ($('#contactFormFullName').val() === "") {
-          alert("Please fill in the form to submit your application.")
+          new PNotify({
+            text: 'Enter full name to continue',
+            type: 'error'
+          });
           return false;
         } else if ($('#contactFormBusinessName').val() === "") {
-          alert("Please fill in the form to submit your application.")
+          new PNotify({
+            text: 'Enter business name to continue',
+            type: 'error'
+          });
           return false;
         } else if ($('#contactFormEmail').val() === "") {
-          alert("Please fill in the form to submit your application.")
+          new PNotify({
+            text: 'Enter email to continue',
+            type: 'error'
+          });
           return false;
         } else if (!$('#customCheck1').is(":checked")) {
-          alert("Please fill in the form to submit your application.")
+          new PNotify({
+            text: 'Agree to the terms to continue',
+            type: 'error'
+          });
           return false;
         }
 
@@ -909,8 +924,20 @@
           type: "POST",
           url: "http://forms.hubspot.com/uploads/form/v2/4620392/eeebf507-8f74-4cea-9656-561e5feb4539",
           data: $(".hubspotForm").serialize(),
-          success: function (succ) { alert("Thanks for providing your details, we will be in contact shortly.") },
-          error: function (err) { alert("Thanks for providing your details, we will be in contact shortly.") }
+          success: function (succ) {
+            new PNotify({
+              title: 'Thanks!',
+              text: 'We\'ll be in touch soon.',
+              type: 'success'
+            });
+          },
+          error: function (err) {
+            new PNotify({
+              title: 'Thanks!',
+              text: 'We\'ll be in touch soon.',
+              type: 'success'
+            });
+          }
         });
 
 
