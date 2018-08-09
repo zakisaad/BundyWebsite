@@ -1,9 +1,8 @@
 .body {
     background: white;
-  }
+}
 
-
-  .shards-app-promo-page--1 .welcome {
+.shards-app-promo-page--1 .welcome {
     height: fit-content !important;
     background-color: white;
 
@@ -12,10 +11,9 @@
     /* IE6-9 */
     /* background: none; */
     /* background-blend-mode: soft-light; */
-  }
+}
 
-  .shards-app-promo-page--1 .welcome:before {
-
+.shards-app-promo-page--1 .welcome:before {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7f7f7+0,ffffff+100 */
     background: rgb(247, 247, 247);
     /* Old browsers */
@@ -27,155 +25,146 @@
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#ffffff', GradientType=0);
     /* IE6-9 */
-  }
+}
 
-  p {
+p {
     font-family: 'Tajawal', sans-serif;
     color: #707070;
     font-weight: 400;
     line-height: 1.2em;
-  }
+}
 
-  h1,
-  h2,
-  h3,
-  h4 {
+h1,
+h2,
+h3,
+h4 {
     color: #707070;
     font-family: 'Tajawal', sans-serif;
     font-weight: 700;
-  }
+}
 
-  .card {
+.card {
     transition: all 0.3s ease-in-out;
+}
 
-  }
-
-  .card:hover {
+.card:hover {
     transform: scale(1.02, 1.02);
-  }
+}
 
-  .btn.btn-pill {
+.btn.btn-pill {
     border-radius: 5px;
-  }
+}
 
-  .feature-text {
+.feature-text {
     font-size: 1.2em;
-  }
+}
 
-  .btn-outline-success {
+.btn-outline-success {
     background-color: transparent;
     background-image: none;
-    border-color: #8DB23A;
-    color: #8DB23A;
-  }
+    border-color: #8db23a;
+    color: #8db23a;
+}
 
-  .btn-outline-success:hover {
+.btn-outline-success:hover {
     color: #fff;
-    background-color: #8DB23A;
-    border-color: #8DB23A;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, .05), 0 4px 10px rgba(142, 178, 58, 0.247);
-  }
+    background-color: #8db23a;
+    border-color: #8db23a;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(142, 178, 58, 0.247);
+}
 
+.text-success {
+    color: #8db23a !important;
+}
 
-
-  .text-success {
-    color: #8DB23A !important;
-
-  }
-
-  .btn-success {
+.btn-success {
     color: #fff;
-    border-color: #8DB23A;
-    background-color: #8DB23A;
+    border-color: #8db23a;
+    background-color: #8db23a;
     box-shadow: none;
-  }
+}
 
-  .btn-success.disabled,
-  .btn-success:disabled {
-    background-color: #8DB23A;
-    border-color: #8DB23A;
+.btn-success.disabled,
+.btn-success:disabled {
+    background-color: #8db23a;
+    border-color: #8db23a;
     box-shadow: none;
     cursor: not-allowed;
-  }
+}
 
-  .btn-success:hover {
+.btn-success:hover {
     color: #fff;
-    background-color: #8DB23A;
-    border-color: #8DB23A;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, .05), 0 4px 10px rgba(142, 178, 58, 0.247);
-  }
+    background-color: #8db23a;
+    border-color: #8db23a;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(142, 178, 58, 0.247);
+}
 
-  .btn-outline-success:not(:disabled):not(.disabled).active,
-  .btn-outline-success:not(:disabled):not(.disabled):active,
-  .show>.btn-outline-success.dropdown-toggle {
+.btn-outline-success:not(:disabled):not(.disabled).active,
+.btn-outline-success:not(:disabled):not(.disabled):active,
+.show > .btn-outline-success.dropdown-toggle {
     color: #fff;
-    background-color: #8DB23A;
-    border-color: #8DB23A;
-  }
+    background-color: #8db23a;
+    border-color: #8db23a;
+}
 
-
-  .btn-success:not(:disabled):not(.disabled).active,
-  .btn-success:not(:disabled):not(.disabled):active,
-  .show>.btn-success.dropdown-toggle {
+.btn-success:not(:disabled):not(.disabled).active,
+.btn-success:not(:disabled):not(.disabled):active,
+.show > .btn-success.dropdown-toggle {
     color: #fff;
-    background-color: #8DB23A;
-    border-color: #8DB23A;
+    background-color: #8db23a;
+    border-color: #8db23a;
     background-image: none;
-    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125) !important;
-  }
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+}
 
-  .btn-outline-success.focus,
-  .btn-outline-success:focus {
-    box-shadow: 0 0 0 3px rgba(141, 178, 58, .05), 0 3px 15px rgba(141, 178, 58, .2), 0 2px 5px rgba(0, 0, 0, .247) !important;
-  }
+.btn-outline-success.focus,
+.btn-outline-success:focus {
+    box-shadow: 0 0 0 3px rgba(141, 178, 58, 0.05), 0 3px 15px rgba(141, 178, 58, 0.2), 0 2px 5px rgba(0, 0, 0, 0.247) !important;
+}
 
-  .btn-success.focus,
-  .btn-success:focus {
-    box-shadow: 0 0 0 3px rgba(142, 178, 58, 0.2), 0 3px 15px rgba(142, 178, 58, 0.1), 0 2px 5px rgba(0, 0, 0, .1);
-  }
+.btn-success.focus,
+.btn-success:focus {
+    box-shadow: 0 0 0 3px rgba(142, 178, 58, 0.2), 0 3px 15px rgba(142, 178, 58, 0.1), 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-
-  .text-bundy-green {
+.text-bundy-green {
     font-weight: 600;
-    color: #8DB23A;
-  }
+    color: #8db23a;
+}
 
-  .text-bundy-green {
+.text-bundy-green {
     font-weight: 600;
-    color: #8DB23A;
-  }
+    color: #8db23a;
+}
 
-  .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-    background-color: #8DB23A;
-  }
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #8db23a;
+}
 
-
-  .custom-control-input:checked~.custom-control-label::before {
+.custom-control-input:checked ~ .custom-control-label::before {
     color: #fff;
     border-color: transparent;
-    background-color: #8DB23A;
+    background-color: #8db23a;
     box-shadow: none;
-  }
+}
 
-  .custom-control-input:checked~.custom-control-label::before {
+.custom-control-input:checked ~ .custom-control-label::before {
     color: #fff;
-    background-color: #8DB23A;
-  }
+    background-color: #8db23a;
+}
 
-
-  [data-notify="progressbar"] {
+[data-notify='progressbar'] {
     margin-bottom: 0px;
     position: absolute;
     bottom: 0px;
     left: 0px;
     width: 100%;
     height: 5px;
-  }
+}
 
-  .card{
-
+.card {
     background-color: #fff;
-    border-radius: .625rem;
+    border-radius: 0.625rem;
     border: 1px solid #f7f7f7;
     box-shadow: 0px 7px 20px 0px #e8e8e85e;
-  }
+}
