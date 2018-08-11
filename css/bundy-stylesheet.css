@@ -1,3 +1,20 @@
+.ui-pnotify{ 
+    background-color: #fff;
+    border-radius: 0.625rem;
+    border: 2px solid #8db23a;
+    box-shadow: 0px 7px 20px 0px #e8e8e85e;
+}
+
+.brighttheme-error {
+    background-color: #fff;
+    border-radius: 0.625rem;
+    border: 2px solid #a94545;
+    box-shadow: 0px 7px 20px 0px #a945454a;
+    color: #a94545;
+}
+
+
+
 .body {
     background: white;
 }
