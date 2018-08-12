@@ -1,16 +1,49 @@
+
+
+.card-img-top  {
+    filter: grayscale(40%);
+}
+.avatar {
+    filter: grayscale(40%);
+    filter: blur(5%);
+}
+
+
+
 .ui-pnotify{ 
     background-color: #fff;
     border-radius: 0.625rem;
-    border: 2px solid #8db23a;
     box-shadow: 0px 7px 20px 0px #e8e8e85e;
 }
 
-.brighttheme-error {
+
+.brighttheme-success  {
+    border: 2px solid #8db23a;
     background-color: #fff;
     border-radius: 0.625rem;
+    box-shadow: 0px 7px 20px 0px #8eb23a4b;
+}
+
+.brighttheme-error {
     border: 2px solid #a94545;
+    background-color: #fff;
+    border-radius: 0.625rem;
     box-shadow: 0px 7px 20px 0px #a945454a;
     color: #a94545;
+}
+
+
+ul{
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 400;
+    line-height: 1.2em;
+}
+
+.btn{
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 500;
+    line-height: 1.2em;
+
 }
 
 
@@ -22,6 +55,7 @@
 .shards-app-promo-page--1 .welcome {
     height: fit-content !important;
     background-color: white;
+    filter: blur(20%);
 
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ededed+0,ffffff+100 */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff', GradientType=0);
