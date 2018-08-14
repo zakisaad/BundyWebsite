@@ -92,7 +92,8 @@ p {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
     color: #707070;
     font-family: 'Tajawal', sans-serif;
     font-weight: 700;
@@ -194,10 +195,6 @@ h4 {
 
 
 
-.text-bundy-green {
-    font-weight: 600;
-    color: #8db23a;
-}
 
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
     background-color: #8db23a;
