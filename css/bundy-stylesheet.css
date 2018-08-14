@@ -1,4 +1,8 @@
-
+@media (max-width: 400px){
+.shards-app-promo-page--1 .welcome .welcome-heading {
+    font-size: 3.2rem;
+}
+}
 
 .card-img-top  {
     filter: grayscale(40%);
@@ -147,7 +151,7 @@ h4 {
     color: #fff;
     background-color: #8db23a;
     border-color: #8db23a;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(142, 178, 58, 0.247);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05), 0 4px 20px rgba(142, 178, 58, 0.6);
 }
 
 .btn-outline-success:not(:disabled):not(.disabled).active,
@@ -182,6 +186,13 @@ h4 {
     font-weight: 600;
     color: #8db23a;
 }
+
+.text-bundy-blue {
+    font-weight: 600;
+    color: #3A8DB2;
+}
+
+
 
 .text-bundy-green {
     font-weight: 600;
