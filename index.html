@@ -24,6 +24,7 @@
 
   <!-- Font Awesome -->
   <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+  
 
   <!-- Google fonts -->
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,100' rel='stylesheet' type='text/css'>
@@ -44,7 +45,7 @@
   .card-blue {
     transition-duration: 200ms;
     transition-timing-function: ease-in-out;
-    
+
   }
 
   .card-red:hover {
@@ -69,10 +70,83 @@
   }
 
   .header-text {
-    font-family: 'Playfair Display', serif!important;
+    font-family: 'Playfair Display', serif !important;
     font-weight: 700;
   }
 
+  .bg-bundy {
+    background-color: #8DB23A;
+    color: white;
+  }
+
+
+  .btn-outline-success {
+    background-color: transparent;
+    background-image: none;
+    border-color: #8db23a;
+    color: #8db23a;
+  }
+
+  .btn-outline-success:hover {
+    color: #fff;
+    background-color: #8db23a;
+    border-color: #8db23a;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(142, 178, 58, 0.247);
+  }
+
+  .text-success {
+    color: #8db23a !important;
+  }
+
+  .btn-success {
+    color: #fff;
+    border-color: #8db23a;
+    background-color: #8db23a;
+    box-shadow: none;
+  }
+
+  .btn-success.disabled,
+  .btn-success:disabled {
+    background-color: #8db23a;
+    border-color: #8db23a;
+    box-shadow: none;
+    cursor: not-allowed;
+  }
+
+  .btn-success:hover {
+    color: #fff;
+    background-color: #8db23a;
+    border-color: #8db23a;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05), 0 4px 20px rgba(142, 178, 58, 0.6);
+  }
+
+  .btn-outline-success:not(:disabled):not(.disabled).active,
+  .btn-outline-success:not(:disabled):not(.disabled):active,
+  .show>.btn-outline-success.dropdown-toggle {
+    color: #fff;
+    background-color: #8db23a;
+    border-color: #8db23a;
+  }
+
+  .btn-success:not(:disabled):not(.disabled).active,
+  .btn-success:not(:disabled):not(.disabled):active,
+  .show>.btn-success.dropdown-toggle {
+    color: #fff;
+    background-color: #8db23a;
+    border-color: #8db23a;
+    background-image: none;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+  }
+
+  .btn-outline-success.focus,
+  .btn-outline-success:focus {
+    box-shadow: 0 0 0 3px rgba(141, 178, 58, 0.05), 0 3px 15px rgba(141, 178, 58, 0.2), 0 2px 5px rgba(0, 0, 0, 0.247) !important;
+  }
+
+  .btn-success.focus,
+  .btn-success:focus {
+    box-shadow: 0 0 0 3px rgba(142, 178, 58, 0.2), 0 3px 15px rgba(142, 178, 58, 0.1), 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
 </style>
 
 <body>
@@ -86,28 +160,44 @@
           <div class="header-padding" style="padding:2rem;padding-bottom:0;">
             <div class="row">
               <div class="col-xs-12 flex text-center">
-                <img src="assets/images/logos/bundy-logo.png" alt="" width="100px" class="ml-3 rounded img-fluid">
+                <img src="assets/images/logos/bundy-logo.png" alt="" width="120px" class="ml-3 rounded img-fluid">
               </div>
               <!-- /.col -->
             </div>
             <!-- /.row -->
             <div class="row">
               <div class="col-sm-12 col-md-6">
-                <h2 class="header-text pt-5 display-4 text-left" style="letter-spacing: -1px;font-weight: 400;">When time is money</h2>
+                <h2 class="header-text pt-5 display-4 text-left" style="letter-spacing: -1px;font-weight: 400;">When time
+                  is money</h2>
                 <!-- <p style="font-size: .7em; color: #ffffff70;">Estimated user base of iOS and android marketplaces combined.</p> -->
-                
-                <div class="hidden-md-down" style="background-color:white;color:rgb(24, 24, 24);border-radius:20px;padding:10px 10px -10px 10px; margin:2rem 0rem .5rem 0rem;width:fit-content"> 
-                <p style="padding:0px 5px 3px 4px;font-weight: 400; font-size: 14px;" > <span class="badge badge-success badge-pill" > 20% </span> savings in payroll by using an automatic time-clock system like bundy  &nbsp; </p>
+
+                <div class="hidden-md-down" style="background-color:white;color:rgb(24, 24, 24);border-radius:20px;padding:10px 10px -10px 10px; margin:2rem 0rem .5rem 0rem;width:fit-content">
+                  <p style="padding:0px 5px 3px 4px;font-weight: 400; font-size: 14px;">
+                    <span class="badge bg-bundy badge-pill"> 20% </span> savings in payroll by using an automatic time-clock
+                    systems like Bundy </p>
                 </div>
                 <p class="">Bundy helps businesses stay on top of <span class="typed" data-text="['time sheets', 'schedules', 'tasking']"></span>.</p>
                 <form class="form">
                   <!-- /.form-group -->
-                  <div class="form-group">
-                    <input type="email" class="form-control" id="email" placeholder="Your email address" style=" height: 40px;;">
+
+                  <!-- <div class="form-group">
+
+                  <div class="input-group mb-3" style="font-weight:200;">
+                    <input type="text" class="form-control" placeholder="Your email address" aria-label="Email Address" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn btn-success" style="border-radius:0px 5px 5px 0px;height: 35px;" type="button">Get Started Now</button>
+                    </div> 
                   </div>
-                  <div class="form-group" style="margin-top:-10px;">
-                    <button type="submit" class="btn btn-outline-ghost btn-block"><i class="fa fa-check" aria-hidden="true"></i>
-                      Apply for a <b> FREE </b> month </button>
+                </div> -->
+
+                  <div class="form-group">
+                    <input type="email" class="form-control" style="border-radius: 5px 5px 0px 0px; border:none; " id="email" placeholder="Your email address"
+                      style=" height: 40px;;">
+                  </div>
+                  <div class="form-group" style="margin-top:-16px;">
+                    <button type="submit" style="border-radius: 0px 0px 5px 5px; " class="btn  btn-success btn-block"><i
+                        class="fa fa-paper-plane" aria-hidden="true"></i>
+                      Get started for <b> FREE </b></button>
                   </div>
                   <!-- /.form-group -->
                 </form>
@@ -148,8 +238,8 @@
               <div class="content-padding">
                 <h2><b>Your Wi-Fi does the hard work</b></span> </b> </h2>
                 <p class="lead">
-                  Bundy connects to your Wi-Fi to automatically detect when employees arrive and leave work.  <br> <br>Bundy uses this information to create
-                  secure time records automatically.
+                  Bundy connects to your Wi-Fi to automatically detect when employees arrive and leave work. <br> <br>Bundy
+                  uses this information to create secure time records automatically.
                 </p>
               </div>
               <!-- /.content-padding -->
@@ -188,14 +278,14 @@
 
               <div class="card color-red card-red my-2 mx-2 ">
                 <div class="mt-4">
-                    <img src="assets/images/visuals/isometric-time-clock.png" alt="" class="img-fluid mx-auto d-block" width="40%">
+                  <img src="assets/images/visuals/isometric-time-clock.png" alt="" class="img-fluid mx-auto d-block" width="40%">
                 </div>
 
                 <table class="table">
                   <thead>
                     <tr>
                       <th>
-                        <h2>Manual time-clocks</h2>
+                        <h2> <b> Manual time-clock systems </b></h2>
                         <h6 class="text-center"> Large initial investment + Ongoing costs</h6>
                       </th>
                     </tr>
@@ -251,14 +341,14 @@
             <div class="col-xs-12 col-md-6">
 
               <div class="card color-blue card-blue my-2 mx-2 ">
-                  <div class="mt-4">
-                      <img src="assets/images/visuals/wifi-isometric.png" alt="" class="img-fluid mx-auto d-block" width="40%">
-                  </div>
+                <div class="mt-4">
+                  <img src="assets/images/visuals/wifi-isometric.png" alt="" class="img-fluid mx-auto d-block" width="40%">
+                </div>
                 <table class="table">
                   <thead>
                     <tr>
                       <th>
-                        <h2>Bundy</h2>
+                        <h2><b>Bundy</b></h2>
                         <h6 class="text-center">Low monthly fee + Free ongoing updates, forever.</h6>
                       </th>
                     </tr>
@@ -345,7 +435,8 @@
               <!-- /.col -->
               <div class="col-xs-12 col-lg-7 text-lg-left text-center">
                 <h1 class=" mt-5"><b> Packed with features</b></h1>
-                <p class="lead" style="margin-top:1rem;margin-left:0;margin-right:0;">Bundy provides your business with the following features:</p>
+                <p class="lead" style="margin-top:1rem;margin-left:0;margin-right:0;">Bundy provides your business with the
+                  following features:</p>
                 <ul class="media-list">
                   <li class="media">
                     <div class="media-left">
