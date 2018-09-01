@@ -1,455 +1,484 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>wrappr · bespoke software developers </title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Bundy · Business Automated </title>
 
-    <!-- Custom styles for this template -->
-    <link href="assets/css/style.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Plugins -->
-    <link href="assets/css/ekko-lightbox.min.css" rel="stylesheet">
-    <link href="assets/css/tether.min.css" rel="stylesheet">
-    <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
-    <link href="assets/css/owl.carousel.theme.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="assets/css/style.min.css" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Plugins -->
+  <link href="assets/css/ekko-lightbox.min.css" rel="stylesheet">
+  <link href="assets/css/tether.min.css" rel="stylesheet">
+  <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/css/owl.carousel.theme.min.css" rel="stylesheet">
 
-    <!-- Google fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,100' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300' rel='stylesheet' type='text/css'>
+  <!-- Font Awesome -->
+  <link href="assets/css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- Google Material Icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  </head>
-  <style>
-  .card-blue:hover{
+  <!-- Google fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,100' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+
+  <!-- Google Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<style>
+  .card-blue:hover {
     transition-duration: 200ms;
     transition-timing-function: ease-in-out;
     box-shadow: 0px 10px 40px rgba(33, 150, 243, .5);
-    transform: translateY(-10px) scale(1.01,1.01);
+    transform: translateY(-10px) scale(1.01, 1.01);
   }
 
-  .card-blue{
+  .card-blue {
     transition-duration: 200ms;
     transition-timing-function: ease-in-out;
+    
   }
 
-    .card-red:hover{
+  .card-red:hover {
     transition-duration: 200ms;
     transition-timing-function: ease-in-out;
     box-shadow: 0px 10px 40px rgba(244, 67, 54, 0.10);
-    transform: translateY(-10px) scale(1.01,1.01);
+    transform: translateY(-10px) scale(1.01, 1.01);
   }
 
-  .card-red{
+  .card-red {
     transition-duration: 200ms;
     transition-timing-function: ease-in-out;
-    border: none;
+    /* border: none; */
   }
 
-      .image-jumbotron-8 .image-jumbotron-overlay {
-        background: #4776e6;
-        background: -moz-linear-gradient(top,  #4776e6 0%, #8e54e9 100%);
-        background: -webkit-linear-gradient(top,  #4776e6 0%,#8e54e9 100%);
-        background: linear-gradient(to bottom,  #4776e6 0%,#8e54e9 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4776e6', endColorstr='#8e54e9',GradientType=0 );
-      }
+  .image-jumbotron-8 .image-jumbotron-overlay {
+    background: #4776e6;
+    background: -moz-linear-gradient(top, #4776e6 0%, #8e54e9 100%);
+    background: -webkit-linear-gradient(top, #4776e6 0%, #8e54e9 100%);
+    background: linear-gradient(to bottom, #4776e6 0%, #8e54e9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4776e6', endColorstr='#8e54e9', GradientType=0);
+  }
 
+  .header-text {
+    font-family: 'Playfair Display', serif!important;
+    font-weight: 700;
+  }
 
-  </style>
-  <body>
+</style>
 
-    <!-- Header dark, text left, visual right
+<body>
+
+  <!-- Header dark, text left, visual right
       ================================================== -->
-      <section class="typography-1">
-        <div class="header text-light img-bottom-lg" style="background-image:url('assets/images/headers/landscape-mountains-nature-sky.jpg')">
-          <div id="particles-js-nasa" class="header-overlay" style="background-color:rgba(37,75,98,0.7)">
-            <div class="container">
-              <div class="header-padding" style="padding:2rem;padding-bottom:0;" >
-                <div class="row">
-                  <div class="col-xs-12 flex text-center">
-                   <img src="assets/images/logos/bundy-logo.png" alt="" width="100px"class="ml-3 rounded img-fluid"  >
-                  </div>
-                  <!-- /.col -->
-                </div>
-                <!-- /.row -->
-                <div class="row">
-                  <div class="col-sm-12 col-md-6">
-                    <h2 class="pt-3 display-4 text-left" style="letter-spacing: -2px;font-weight: 400;">When time is money</h2>
-                    <!-- <p style="font-size: .7em; color: #ffffff70;">Estimated user base of iOS and android marketplaces combined.</p> -->
-                    <p class="lead">Bundy helps businesses stay on top of  <span class="typed" data-text="['Timesheeting', 'Scheduling', '']"></span>.</p>
-                    <form class="form">
-                        <!-- /.form-group -->
-                        <div class="form-group">
-                          <input type="email" class="form-control" id="email" placeholder="Your email address" style=" height: 40px;;">
-                        </div>
-                        <div class="form-group" style="margin-top:-10px;">
-                          <button type="submit" class="btn btn-outline-ghost btn-block"><i class="fa fa-hourglass-start" aria-hidden="true"></i> Apply for a<b> FREE </b>  month of premium </button>
-                        </div>
-                        <!-- /.form-group -->
-                      </form>
-                    
-                    </div>
-                  <!-- /.col -->
-                  <div class="col-sm-12 col-md-6 push-lg-1 col-lg-5 text-xs-center no-margin-sm text-md-right img-container  py-4">
-                    <img src="assets/images/visuals/iPhone-6S---isometric-view.png" alt="" class="img-fluid py-4 my-5">
-                  </div>
-                  <!-- /.col -->
-                </div>
-                <!-- /.row -->
-              </div>
-              <!-- /.header-padding -->
-            </div>
-            <!-- /.container -->
-          </div>
-          <!-- /.header-overlay -->
-        </div>
-        <!-- /.header -->
-      </section>
-  
-  
-      
-    <!-- Visual left, text aligned left
-      ================================================== -->
-      <section class="typography-1">
-        <div class="content content-padding-l" style="background-image:url()">
-          <div class="content-overlay" style="background-color:rgba(255,255,255,0)">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-6">
-                  <!-- image -->
-                  <img src="assets/images/visuals/bundy-wifi.png" alt="" class="img-fluid mx-auto d-block" width="60%">
-                </div>
-                <!-- /.col -->
-                <div class="col-md-6 text-sm-center text-md-left mb-1">
-                  <div class="content-padding">
-                    <h2><b>Your Wi-Fi does the hard work</b></span>  </b> </h2>
-                    <p class="lead">
-                      Bundy connects to your Wi-Fi to automatically detect when employees arrive and leave work. <br> <br> Never deal with time-clock issues again, finally.
-                    </p>
-                  </div>
-                  <!-- /.content-padding -->
-                </div>
-                <!-- /.col -->
-              </div>
-              <!-- /.row -->
-            </div>
-            <!-- /.container -->
-          </div>
-          <!-- /.content-overlay -->
-        </div>
-        <!-- /.content -->
-      </section>
-  
-
-          <!-- Pricing tables, 3 plans
-      ================================================== -->
-    <section class="typography-1" style="background-color:rgb(246, 246, 246);border-top:1px solid rgb(230,230,230);border-bottom:1px solid rgb(230,230,230);" >
-      <div class="pricing pricing-style-1 text-dark">
-        <div class="pricing-overlay">
-          <div class="container">
+  <section class="typography-1">
+    <div class="header text-light img-bottom-lg" style="background-image:url('assets/images/headers/landscape-mountains-nature-sky.jpg')">
+      <div id="particles-js-nasa" class="header-overlay" style="background-color:rgba(37,75,98,0.7)">
+        <div class="container">
+          <div class="header-padding" style="padding:2rem;padding-bottom:0;">
             <div class="row">
-              <div class="col-12 my-4">
-                <h1 class="text-center hidden-xs-down"> 
-                  <b> Competitors <span class="badge badge-pill badge-danger"> vs </span> Bundy  </b> 
-                </h1>
-                <h2 class="text-center hidden-sm-up"> 
-                  <b> Competitors  <br>  <span class="badge badge-pill badge-danger mt-3 mb-2">vs </span> <br>Bundy </b> 
-                </h2>
-
-                <p class="lead"> 'Traditional' apps provided by other third-party suppliers</p>
+              <div class="col-xs-12 flex text-center">
+                <img src="assets/images/logos/bundy-logo.png" alt="" width="100px" class="ml-3 rounded img-fluid">
+              </div>
+              <!-- /.col -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <h2 class="header-text pt-5 display-4 text-left" style="letter-spacing: -1px;font-weight: 400;">When time is money</h2>
+                <!-- <p style="font-size: .7em; color: #ffffff70;">Estimated user base of iOS and android marketplaces combined.</p> -->
+                
+                <div class="hidden-md-down" style="background-color:white;color:rgb(24, 24, 24);border-radius:20px;padding:10px 10px -10px 10px; margin:2rem 0rem .5rem 0rem;width:fit-content"> 
+                <p style="padding:0px 5px 3px 4px;font-weight: 400; font-size: 14px;" > <span class="badge badge-success badge-pill" > 20% </span> savings in payroll by using an automatic time-clock system like bundy  &nbsp; </p>
+                </div>
+                <p class="">Bundy helps businesses stay on top of <span class="typed" data-text="['time sheets', 'schedules', 'tasking']"></span>.</p>
+                <form class="form">
+                  <!-- /.form-group -->
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="email" placeholder="Your email address" style=" height: 40px;;">
+                  </div>
+                  <div class="form-group" style="margin-top:-10px;">
+                    <button type="submit" class="btn btn-outline-ghost btn-block"><i class="fa fa-check" aria-hidden="true"></i>
+                      Apply for a <b> FREE </b> month </button>
+                  </div>
+                  <!-- /.form-group -->
+                </form>
 
               </div>
-              <div class="col-xs-12 col-md-6">
+              <!-- /.col -->
+              <div class="col-sm-12 col-md-6 push-lg-1 col-lg-5 text-xs-center no-margin-sm text-md-right img-container  py-4">
+                <img src="assets/images/visuals/iPhone-6S---isometric-view.png" alt="" class="img-fluid py-4 ">
+              </div>
+              <!-- /.col -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.header-padding -->
+        </div>
+        <!-- /.container -->
+      </div>
+      <!-- /.header-overlay -->
+    </div>
+    <!-- /.header -->
+  </section>
 
-                <div class="card color-red card-red my-2 mx-2 ">
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th>
-                          <h2>Traditional Apps</h2>
-                          <h6 class="text-center"> Large initial investment + Ongoing Maintanence costs</h6>
-                        </th>
-                      </tr>
-                      <tr class="price">
-                        <th>
-                          <div style="font-size:1.5em;font-weight: bold;">$15,000 +</div>
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>    
-                      <tr>
-                        <td>
-                          <h4><i class="fa fa-exclamation-triangle"></i></h4>
-                          <h4><b> Difficult to update</b></h4>
-                          <p> Requires dedicated support to ensure content is updated.<p> 
-                          <!-- <h5><i class="fa fa-bolt" aria-hidden="true"></i> 10,000</h5> -->
-                          <hr>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <h4><i class="fa fa-bug"></i>  <i class="fa fa-bolt"></i></h4>
-                          <h4><b> Bugs & Errors</b></h4>
-                          <p> Custom built applications are prone to bugs and errors.<p> 
-                          <!-- <h5><i class="fa fa-bolt" aria-hidden="true"></i> 10,000</h5> -->
-                          <hr>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                            <h4><i class="fa fa-hourglass-start"></i></h4>
-                            <h4><b> Long development process </b></h4>
-                            <p>Average lead time of 3-6 months.<p> 
-                        </td>
-                      </tr>
-                    </tbody>
-                    <!-- <tfoot>
+
+
+  <!-- Visual left, text aligned left
+      ================================================== -->
+  <section class="typography-1">
+    <div class="content content-padding-l" style="background-image:url()">
+      <div class="content-overlay" style="background-color:rgba(255,255,255,0)">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <!-- image -->
+              <img src="assets/images/visuals/bundy-wifi.png" alt="" class="img-fluid mx-auto d-block" width="60%">
+            </div>
+            <!-- /.col -->
+            <div class="col-md-6 text-sm-center text-md-left mb-1">
+              <div class="content-padding">
+                <h2><b>Your Wi-Fi does the hard work</b></span> </b> </h2>
+                <p class="lead">
+                  Bundy connects to your Wi-Fi to automatically detect when employees arrive and leave work.  <br> <br>Bundy uses this information to create
+                  secure time records automatically.
+                </p>
+              </div>
+              <!-- /.content-padding -->
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </div>
+      <!-- /.content-overlay -->
+    </div>
+    <!-- /.content -->
+  </section>
+
+
+  <!-- Pricing tables, 3 plans
+      ================================================== -->
+  <section class="typography-1" style="background-color:rgb(246, 246, 246);border-top:1px solid rgb(230,230,230);border-bottom:1px solid rgb(230,230,230);">
+    <div class="pricing pricing-style-1 text-dark">
+      <div class="pricing-overlay">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 my-4">
+              <h1 class="text-center hidden-xs-down">
+                <b> Time-clocks <span class="badge badge-pill badge-danger"> vs </span> Bundy </b>
+              </h1>
+              <h2 class="text-center hidden-sm-up">
+                <b> Time-clocks <br> <span class="badge badge-pill badge-danger mt-3 mb-2">vs </span> <br>Bundy </b>
+              </h2>
+
+              <p class="lead"> Why Bundy pioneers small business</p>
+
+            </div>
+            <div class="col-xs-12 col-md-6">
+
+              <div class="card color-red card-red my-2 mx-2 ">
+                <div class="mt-4">
+                    <img src="assets/images/visuals/isometric-time-clock.png" alt="" class="img-fluid mx-auto d-block" width="40%">
+                </div>
+
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>
+                        <h2>Manual time-clocks</h2>
+                        <h6 class="text-center"> Large initial investment + Ongoing costs</h6>
+                      </th>
+                    </tr>
+                    <tr class="price">
+                      <th>
+                        <div style="font-size:1.5em;font-weight: bold;">$1,000+</div>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <h4><i class="fa fa-exclamation-triangle"></i></h4>
+                        <h4><b> Difficult to enforce</b></h4>
+                        <p> Enforcement of time-clock use is difficult and time consuming, taking up your valuable time.
+                          <p>
+                            <!-- <h5><i class="fa fa-bolt" aria-hidden="true"></i> 10,000</h5> -->
+                            <hr>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h4><i class="fa fa-bug"></i> <i class="fa fa-bolt"></i></h4>
+                        <h4><b> Bugs & Errors</b></h4>
+                        <p> Custom built applications are prone to bugs and errors.
+                          <p>
+                            <!-- <h5><i class="fa fa-bolt" aria-hidden="true"></i> 10,000</h5> -->
+                            <hr>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h4><i class="fa fa-hourglass-start"></i></h4>
+                        <h4><b> Long development process </b></h4>
+                        <p>Average lead time of 3-6 months.
+                          <p>
+                      </td>
+                    </tr>
+                  </tbody>
+                  <!-- <tfoot>
                       <tr>
                         <td>
                           <a href="javascript:void(0);" class="btn btn-outline-red btn-block btn-lg">Select Plan</a>
                         </td>
                       </tr>
                     </tfoot> -->
-                  </table>
-                  <!-- /.table -->
-                </div>
-                <!-- /.card -->
+                </table>
+                <!-- /.table -->
               </div>
-              <!-- /.col -->
-              <div class="col-xs-12 col-md-6">
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col-xs-12 col-md-6">
 
-                <div class="card bg-blue card-blue my-2 mx-2 ">
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th>
-                          <h2>Wrappr Apps</h2>
-                          <h6 class="text-center">One time investment</h6>
-                        </th>
-                      </tr>
-                      <tr class="price">
-                        <th>
-                            <div style="font-size:1.5em;font-weight: bold;">$2,999</div>
-                          </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                          <td>
-                              <h4><i class="fa fa-check-circle"></i></h4>
-                              <h4><b> Feature packed application </b></h4>
-                              <p>We develop a quality, market ready application, not a shortcut.<p> 
-                              <hr>
-                          </td>
-                        </tr>
-                      <tr>
-                          <td>
-                              <h4><i class="fa fa-apple"></i> <i class="fa fa-android"></i></h4>
-                              <h4><b> Cross platform </b></h4>
-                              <p>Our apps are available the iOS and Android markets.<p> 
-                              <hr>
-                          </td>
-                      </tr>
-                      <tr>
-                          <td>
-                              <h4><i class="fa fa-tachometer"></i></h4>
-                              <h4><b> Rapid development process </b></h4>
-                              <p>Lead time of 5 Business days.<p> 
-                          </td>
-                        </tr>
-                    </tbody>
-                    <!-- <tfoot>
+              <div class="card color-blue card-blue my-2 mx-2 ">
+                  <div class="mt-4">
+                      <img src="assets/images/visuals/wifi-isometric.png" alt="" class="img-fluid mx-auto d-block" width="40%">
+                  </div>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>
+                        <h2>Bundy</h2>
+                        <h6 class="text-center">Low monthly fee + Free ongoing updates, forever.</h6>
+                      </th>
+                    </tr>
+                    <tr class="price">
+                      <th>
+                        <div style="font-size:1.5em;font-weight: bold;">$5<small /pm></small> </div>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <h4><i class="fa fa-check"></i></h4>
+                        <h4><b> Autoamtic Timesheet Creation </b></h4>
+                        <p>Bundy uses your wifi network to automatically create exact time records without human interference.
+                          <p>
+                            <hr>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h4><i class="fa fa-apple"></i> <i class="fa fa-android"></i></h4>
+                        <h4><b> Cross platform </b></h4>
+                        <p>Bundy runs on your mobile, tablet and desktop devices.
+                          <p>
+                            <hr>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h4><i class="fa fa-plane"></i> <i class="fa fa-globe"></i></h4>
+                        <h4><b> Access your data anywhere</b></h4>
+                        <p> Your data is stored in your private cloud, accessible globally, 24/7.
+                          <p>
+                      </td>
+                    </tr>
+                  </tbody>
+                  <!-- <tfoot>
                       <tr>
                         <td>
                           <a href="javascript:void(0);" class="btn btn-secondary btn-block btn-lg">Select Plan</a>
                         </td>
                       </tr>
                     </tfoot> -->
-                  </table>
-                  <!-- /.table -->
+                </table>
+                <!-- /.table -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </div>
+      <!-- /.pricing-overlay -->
+    </div>
+    <!-- /.pricing -->
+  </section>
+
+
+  <!-- Header light, text right, gradient, visual left
+      ================================================== -->
+  <style type="text/css">
+    /* http://www.colorzilla.com/gradient-editor/#c21500+0,ffc500+100 */
+    .header-gradient-app .header-overlay {
+      background: #ffffff;
+      /* background: -moz-linear-gradient(left, #00d2ff 0%, #3a7bd5 100%);
+      background: -webkit-linear-gradient(left, #00d2ff 0%, #3a7bd5 100%);
+      background: linear-gradient(to right, #00d2ff 0%, #3a7bd5 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c21500', endColorstr='#ffc500', GradientType=1); */
+    }
+  </style>
+
+  <section class="header-gradient-app typography-1">
+    <div class="header text-dark">
+      <div class="header-overlay">
+        <div class="container">
+          <div class="header-padding-xl">
+            <div class="row">
+              <div class="col-xs-8 push-xs-2 col-sm-6 push-sm-3 push-lg-0 col-lg-5 text-md-center text-lg-left">
+                <img src="assets/images/visuals/iPhone-6-4,7-inch-Mockup.png" width="80%" alt="" class="img-fluid">
+              </div>
+              <!-- /.col -->
+              <div class="col-xs-12 col-lg-7 text-lg-left text-center">
+                <h1 class=" mt-5"><b> Packed with features</b></h1>
+                <p class="lead" style="margin-top:1rem;margin-left:0;margin-right:0;">Bundy provides your business with the following features:</p>
+                <ul class="media-list">
+                  <li class="media">
+                    <div class="media-left">
+                      <i class="material-icons">note_add</i>
+                    </div>
+                    <div class="media-body ml-2">
+                      <h4 class="media-heading">Automatic timsheets</h4>
+                      Time-sheets automatically captures and stored to your private cloud.
+                    </div>
+                  </li>
+                  <li class="media">
+                    <div class="media-left">
+                      <i class="material-icons">business</i>
+                    </div>
+                    <div class="media-body ml-2">
+                      <h4 class="media-heading">Business Overview</h4>
+                      All the information your customers need to know.
+                    </div>
+                  </li>
+
+                </ul>
+                <div class="btn-container text-xs-center text-md-left btn-stack-lg">
+                  <a class="btn btn-outline-ghost btn-lg btn-pill btn-block" href="https://www.youtube.com/watch?v=JQVmkDUkZT4" data-toggle="lightbox"
+                    role="button"><i class="fa fa-check-square" aria-hidden="true"></i> Pick your Features</a>
                 </div>
-                <!-- /.card -->
               </div>
               <!-- /.col -->
             </div>
             <!-- /.row -->
           </div>
-          <!-- /.container -->
+          <!-- /.header-padding -->
         </div>
-        <!-- /.pricing-overlay -->
+        <!-- /.container -->
       </div>
-      <!-- /.pricing -->
-    </section>
+      <!-- /.header-overlay -->
+    </div>
+    <!-- /.header -->
+  </section>
 
 
-    <!-- Header light, text right, gradient, visual left
+  <!-- Image Jumbotron #8
       ================================================== -->
-      <style type="text/css">
-        /* http://www.colorzilla.com/gradient-editor/#c21500+0,ffc500+100 */
-        .header-gradient-app .header-overlay {
-          background: #3a7bd5;
-          background: -moz-linear-gradient(left,  #00d2ff 0%, #3a7bd5 100%);
-          background: -webkit-linear-gradient(left,  #00d2ff 0%,#3a7bd5 100%);
-          background: linear-gradient(to right,  #00d2ff 0%,#3a7bd5 100%);
-          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c21500', endColorstr='#ffc500',GradientType=1 );
-        }
-        </style>
-    
-        <section class="header-gradient-app typography-1">
-          <div class="header text-light">
-            <div class="header-overlay">
-              <div class="container">
-                <div class="header-padding-xl">
-                  <div class="row">
-                    <div class="col-xs-8 push-xs-2 col-sm-6 push-sm-3 push-lg-0 col-lg-5 text-md-center text-lg-left">
-                      <img src="assets/images/visuals/iPhone-6-4,7-inch-Mockup.png" alt="" class="img-fluid">
-                    </div>
-                    <!-- /.col -->
-                    <div class="col-xs-12 col-lg-7 text-lg-left text-center">
-                      <h1 class="display-4 mt-5"><b> Packed with features</b></h1>
-                      <p class="lead">Wrappr apps come packed with the following features:</p>
-                      <ul class="media-list">
-                       <li class="media">
-                          <div class="media-left">
-                            <i class="material-icons">business</i>
-                          </div>
-                          <div class="media-body ml-2">
-                            <h4 class="media-heading">Business Overview</h4>
-                            All the information your customers need to know.
-                          </div>
-                        </li>
-                        <li class="media">
-                          <div class="media-left">
-                            <i class="material-icons">business</i>
-                          </div>
-                          <div class="media-body ml-2">
-                            <h4 class="media-heading">Business Overview</h4>
-                            All the information your customers need to know.
-                          </div>
-                        </li>
-
-                      </ul>
-                      <div class="btn-container text-xs-center text-md-left btn-stack-lg">
-                        <a class="btn btn-outline-ghost btn-lg btn-pill btn-block" href="https://www.youtube.com/watch?v=JQVmkDUkZT4" data-toggle="lightbox" role="button"><i class="fa fa-check-square" aria-hidden="true"></i> Pick your Features</a>
-                      </div>
-                    </div>
-                    <!-- /.col -->
-                  </div>
-                  <!-- /.row -->
-                </div>
-                <!-- /.header-padding -->
-              </div>
-              <!-- /.container -->
+  <section class="typography-2">
+    <div class="content" style="background-image:url()">
+      <div class="content-overlay" style="background-color:rgba(0,0,0,0.15)">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <h1>Let's get in touch!</h1>
+              <p class="lead no-margin-b">We'd love to chat and see how we can help.</p>
             </div>
-            <!-- /.header-overlay -->
-          </div>
-          <!-- /.header -->
-        </section>
-    
-        
-          <!-- Image Jumbotron #8
-      ================================================== -->
-      <section class="typography-2">
-        <div class="content" style="background-image:url()">
-          <div class="content-overlay" style="background-color:rgba(0,0,0,0.15)">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-8">
-                  <h1>Let's get in touch!</h1>
-                  <p class="lead no-margin-b">We'd love to chat and see how we can help.</p>
-                </div>
-                <!-- /.col -->
-                <div class="col-md-4 text-sm-left text-md-right">
-                  <div class="btn-container mt-sm-1">
-                    <a class="btn btn-xlg btn-deep-orange" href="#" role="button"><i class="fa fa-comment" aria-hidden="true"></i> Contact us</a>
-                  </div>
-                </div>
-                <!-- /.col -->
+            <!-- /.col -->
+            <div class="col-md-4 text-sm-left text-md-right">
+              <div class="btn-container mt-sm-1">
+                <a class="btn btn-xlg btn-deep-orange" href="#" role="button"><i class="fa fa-comment" aria-hidden="true"></i>
+                  Contact us</a>
               </div>
-              <!-- /.row -->
             </div>
-            <!-- /.container -->
+            <!-- /.col -->
           </div>
-          <!-- /.content-overlay -->
+          <!-- /.row -->
         </div>
-        <!-- /.content -->
-      </section>
+        <!-- /.container -->
+      </div>
+      <!-- /.content-overlay -->
+    </div>
+    <!-- /.content -->
+  </section>
 
-    <section class="typography-1">
-      <div class="footer text-light" style="background-image:url()">
-        <div class="footer-overlay" style="background-color:rgba(0,0,0,0.8)">
-          <div class="container">
-            <div class="row">
-              <div class="col-xs-12 col-sm-4 text-xs-center text-sm-left">
-                <!-- <h1> wrappr</h1> -->
-                <img src="assets/images/logos/bundy-logo.png" alt="" class="img-fluid mb-3" width="100px;">
-                <address class="color-light-20">
-                  79 George Street<br>
-                  Parramatta, NSW 2150.<br><br>
-                  <b> ABN · 16 617 165 152 </b> 
-                </address>
-                <!-- <ul class="list-unstyled list-light">
+  <section class="typography-1">
+    <div class="footer text-light" style="background-image:url()">
+      <div class="footer-overlay" style="background-color:rgba(0,0,0,0.8)">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-4 text-xs-center text-sm-left">
+              <!-- <h1> wrappr</h1> -->
+              <img src="assets/images/logos/bundy-logo.png" alt="" class="img-fluid mb-3" width="100px;">
+              <address class="color-light-20">
+                79 George Street<br> Parramatta, NSW 2150.<br><br>
+                <b> ABN · 16 617 165 152 </b>
+              </address>
+              <!-- <ul class="list-unstyled list-light">
                   <li><a href="#">Disclaimer</a></li>
                 </ul> -->
-              </div>
-              <!-- /.col -->
-              <div class="col-xs-12 col-sm-4 text-xs-center text-sm-left">
-                <h4 class="my-2">Links</h4>
-                <ul class="list-unstyled list-light">
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="#">Customers</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="template-wrappr.html">Home</a></li>
-                  </ul>
-              </div>
-              <!-- /.col -->
-              <div class="col-xs-12 col-sm-4 text-xs-center text-sm-left">
-                <h4 class="my-2">Company</h4>
-                <ul class="list-unstyled list-light">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">The Team</a></li>
-                  <li><a href="#">Careers</a></li>
-                </ul>
-  
-                <div class=" hor-spacing-sm-a pt-2">
-                  <a href="#" role="button" class="color-light"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-                  <a href="#" role="button" class="color-light"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                  <a href="#" role="button" class="color-light"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                  <a href="#" role="button" class="color-light"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                </div>
-              </div>
-              <!-- /.col -->
             </div>
-            <!-- /.row -->
-            <div class="col-xs-12 text-xs-center text-secondary my-3">
-              © Copyright 2018 • All Rights Reserved
+            <!-- /.col -->
+            <div class="col-xs-12 col-sm-4 text-xs-center text-sm-left">
+              <h4 class="my-2">Links</h4>
+              <ul class="list-unstyled list-light">
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="#">Customers</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="template-wrappr.html">Home</a></li>
+              </ul>
             </div>
-            </div>
-            <!-- /.row -->
-          </div>
-          <!-- /.container -->
-        </div>
-        <!-- /.footer-overlay -->
-      
-      <!-- /.footer -->
-    </section>
+            <!-- /.col -->
+            <div class="col-xs-12 col-sm-4 text-xs-center text-sm-left">
+              <h4 class="my-2">Company</h4>
+              <ul class="list-unstyled list-light">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">The Team</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
 
-  
+              <div class=" hor-spacing-sm-a pt-2">
+                <a href="#" role="button" class="color-light"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                <a href="#" role="button" class="color-light"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#" role="button" class="color-light"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#" role="button" class="color-light"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+          <div class="col-xs-12 text-xs-center text-secondary my-3">
+            © Copyright 2018 • All Rights Reserved
+          </div>
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.footer-overlay -->
+
+    <!-- /.footer -->
+  </section>
+
+
 
   <!-- JavaScript
     ================================================== -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY"
+    crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')</script>
   <script src="assets/js/tether.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
@@ -460,4 +489,5 @@
   <script src="assets/js/fss.min.js"></script>
   <script src="assets/js/scripts.min.js"></script>
 </body>
+
 </html>
