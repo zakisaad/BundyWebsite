@@ -45,12 +45,6 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <style>
-  .card-blue:hover {
-    transition-duration: 200ms;
-    transition-timing-function: ease-in-out;
-    box-shadow: 0px 10px 40px rgba(33, 150, 243, .3);
-    transform: translateY(-10px) scale(1.01, 1.01);
-  }
 
   body{
     font-family:  'Open Sans',  sans-serif!important;
@@ -62,20 +56,27 @@
   }
 
   .card-blue {
-    transition-duration: 200ms;
+    transition-duration: 150ms;
     transition-timing-function: ease-in-out;
     border-color:transparent!important;
   }
 
+  .card-blue:hover {
+    transition-duration: 150ms;
+    transition-timing-function: ease-in-out;
+    box-shadow: 0px 10px 40px rgba(33, 150, 243, .3);
+    transform: translateY(-10px) scale(1.01, 1.01);
+  }
+
   .card-red:hover {
-    transition-duration: 200ms;
+    transition-duration: 150ms;
     transition-timing-function: ease-in-out;
     box-shadow: 0px 10px 40px rgba(244, 67, 54, 0.10);
     transform: translateY(-10px) scale(1.01, 1.01);
   }
 
   .card-red {
-    transition-duration: 200ms;
+    transition-duration: 150ms;
     transition-timing-function: ease-in-out;
     border-color: transparent!important;
   }
@@ -127,6 +128,9 @@
     border-color: #0099ff;
     background-color: #0099ff;
     box-shadow: none;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+
   }
 
   .btn-success.disabled,
@@ -135,13 +139,17 @@
     border-color: #0099ff;
     box-shadow: none;
     cursor: not-allowed;
+    
   }
 
   .btn-success:hover {
     color: #fff;
     background-color: #0099ff;
     border-color: #0099ff;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05), 0 4px 20px rgba(46, 204, 112, 0.5);
+    box-shadow: 5px 20px rgba(0, 0, 0, 0.05), 0 4px 20px rgba(10, 153, 255, 0.53);
+    transition-duration: 50ms;
+    transition-timing-function: ease-in-out;
+
   }
 
   .btn-outline-success:not(:disabled):not(.disabled).active,
@@ -164,15 +172,15 @@
 
   .btn-outline-success.focus,
   .btn-outline-success:focus {
-    box-shadow: 0 0 0 3px rgba(46, 114, 204, 0.2), 0 3px 15px rgba(46, 114, 204, 0.2), 0 2px 5px rgba(46, 114, 204, 0.2) !important;
-    transition-duration: 200ms;
+    box-shadow: 5px 20px rgba(0, 0, 0, 0.05), 0 4px 20px rgba(10, 153, 255, 0.53);
+    transition-duration: 50ms;
     transition-timing-function: ease-in-out;
   }
 
   .btn-success.focus,
   .btn-success:focus {
-    box-shadow: 0 0 0 3px rgba(46, 114, 204, 0.2), 0 3px 15px rgba(46, 114, 204, 0.2), 0 2px 5px rgba(46, 114, 204, 0.2) !important; 
-    transition-duration: 200ms;
+    box-shadow: 5px 20px rgba(0, 0, 0, 0.05), 0 4px 20px rgba(10, 153, 255, 0.53);
+    transition-duration: 50ms;
     transition-timing-function: ease-in-out;
   }
 
