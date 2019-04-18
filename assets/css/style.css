@@ -327,28 +327,33 @@
 /* Typography fonts */
 /* Default */
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Questrial', sans-serif;
   font-weight: 300;
 }
+
+input {
+  font-family: 'Questrial', sans-serif;
+
+}
 body h1, body h2, body h3, body h4, body h5, body h6 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Questrial', sans-serif;
   font-weight: 300;
 }
 
 .typography-1 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Questrial', sans-serif;
   font-weight: 300;
 }
 .typography-1 h1, .typography-1 h2, .typography-1 h3, .typography-1 h4, .typography-1 h5, .typography-1 h6 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Questrial', sans-serif;
   font-weight: 300;
 }
 
 .typography-2 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Questrial', sans-serif;
 }
 .typography-2 h1, .typography-2 h2, .typography-2 h3, .typography-2 h4, .typography-2 h5, .typography-2 h6 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Questrial', sans-serif;
   font-weight: 600;
 }
 
